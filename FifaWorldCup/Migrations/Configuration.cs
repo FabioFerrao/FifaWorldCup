@@ -324,6 +324,105 @@ namespace FifaWorldCup.Migrations
             new EstatisticaJ {Id=225, Nome="Jogo Pés GR", Valor=59, IndiceJogador=33 },
             new EstatisticaJ {Id=226, Nome="Reflexos GR", Valor=63, IndiceJogador=33 },
 
+            
+            //---------------------------  PANAMA --------------------------------
+
+            //Perez
+            new EstatisticaJ {Id=227, Nome="Aceleração", Valor=65, IndiceJogador=34 },
+            new EstatisticaJ {Id=228, Nome="Resistência", Valor=64, IndiceJogador=34 },
+            new EstatisticaJ {Id=229, Nome="Força", Valor=80, IndiceJogador=34 },
+            new EstatisticaJ {Id=230, Nome="Equilibrio", Valor=65, IndiceJogador=34},
+            new EstatisticaJ {Id=231, Nome="Sprint", Valor=63, IndiceJogador=34 },
+            new EstatisticaJ {Id=232, Nome="Agilidade", Valor=64, IndiceJogador=34 },
+            new EstatisticaJ {Id=233, Nome="Salto", Valor=75, IndiceJogador=34},
+            
+            //Rodriguez
+            new EstatisticaJ {Id=234, Nome="Aceleração", Valor=72, IndiceJogador=35 },
+            new EstatisticaJ {Id=235, Nome="Resistência", Valor=47, IndiceJogador=35 },
+            new EstatisticaJ {Id=236, Nome="Força", Valor=58, IndiceJogador=35 },
+            new EstatisticaJ {Id=237, Nome="Equilibrio", Valor=73, IndiceJogador=35},
+            new EstatisticaJ {Id=238, Nome="Sprint", Valor=68, IndiceJogador=35 },
+            new EstatisticaJ {Id=239, Nome="Agilidade", Valor=74, IndiceJogador=35 },
+            new EstatisticaJ {Id=240, Nome="Salto", Valor=68, IndiceJogador=35},
+                    
+            //Godoy
+            new EstatisticaJ {Id=241, Nome="Aceleração", Valor=50, IndiceJogador=36 },
+            new EstatisticaJ {Id=242, Nome="Resistência", Valor=78, IndiceJogador=36 },
+            new EstatisticaJ {Id=243, Nome="Força", Valor=73, IndiceJogador=36 },
+            new EstatisticaJ {Id=244, Nome="Equilibrio", Valor=66, IndiceJogador=36},
+            new EstatisticaJ {Id=245, Nome="Sprint", Valor=53, IndiceJogador=36 },
+            new EstatisticaJ {Id=246, Nome="Agilidade", Valor=67, IndiceJogador=36 },
+            new EstatisticaJ {Id=247, Nome="Salto", Valor=64, IndiceJogador=36},
+                    
+            //Cooper
+            new EstatisticaJ {Id=248, Nome="Aceleração", Valor=79, IndiceJogador=37 },
+            new EstatisticaJ {Id=249, Nome="Resistência", Valor=77, IndiceJogador=37 },
+            new EstatisticaJ {Id=250, Nome="Força", Valor=56, IndiceJogador=37 },
+            new EstatisticaJ {Id=251, Nome="Equilibrio", Valor=76, IndiceJogador=37},
+            new EstatisticaJ {Id=252, Nome="Sprint", Valor=78, IndiceJogador=37 },
+            new EstatisticaJ {Id=253, Nome="Agilidade", Valor=79, IndiceJogador=37 },
+            new EstatisticaJ {Id=254, Nome="Salto", Valor=65, IndiceJogador=37},
+            
+            //Barcenas
+            new EstatisticaJ {Id=255, Nome="Aceleração", Valor=83, IndiceJogador=38 },
+            new EstatisticaJ {Id=256, Nome="Resistência", Valor=62, IndiceJogador=38 },
+            new EstatisticaJ {Id=257, Nome="Força", Valor=52, IndiceJogador=38 },
+            new EstatisticaJ {Id=258, Nome="Equilibrio", Valor=74, IndiceJogador=38},
+            new EstatisticaJ {Id=259, Nome="Sprint", Valor=82, IndiceJogador=38 },
+            new EstatisticaJ {Id=260, Nome="Agilidade", Valor=82, IndiceJogador=38 },
+            new EstatisticaJ {Id=261, Nome="Salto", Valor=58, IndiceJogador=38},
+            
+            //Gomez
+            new EstatisticaJ {Id=262, Nome="Aceleração", Valor=64, IndiceJogador=39 },
+            new EstatisticaJ {Id=263, Nome="Resistência", Valor=74, IndiceJogador=39 },
+            new EstatisticaJ {Id=264, Nome="Força", Valor=77, IndiceJogador=39 },
+            new EstatisticaJ {Id=265, Nome="Equilibrio", Valor=62, IndiceJogador=39},
+            new EstatisticaJ {Id=266, Nome="Sprint", Valor=66, IndiceJogador=39 },
+            new EstatisticaJ {Id=267, Nome="Agilidade", Valor=81, IndiceJogador=39 },
+            new EstatisticaJ {Id=268, Nome="Salto", Valor=66, IndiceJogador=39},
+
+            //Davis
+            new EstatisticaJ {Id=269, Nome="Aceleração", Valor=74, IndiceJogador=40 },
+            new EstatisticaJ {Id=270, Nome="Resistência", Valor=66, IndiceJogador=40 },
+            new EstatisticaJ {Id=271, Nome="Força", Valor=63, IndiceJogador=40 },
+            new EstatisticaJ {Id=272, Nome="Equilibrio", Valor=62, IndiceJogador=40},
+            new EstatisticaJ {Id=273, Nome="Sprint", Valor=73, IndiceJogador=40 },
+            new EstatisticaJ {Id=274, Nome="Agilidade", Valor=60, IndiceJogador=40 },
+            new EstatisticaJ {Id=275, Nome="Salto", Valor=64, IndiceJogador=40},
+
+            //Escobar
+            new EstatisticaJ {Id=276, Nome="Aceleração", Valor=75, IndiceJogador=41 },
+            new EstatisticaJ {Id=277, Nome="Resistência", Valor=79, IndiceJogador=41 },
+            new EstatisticaJ {Id=278, Nome="Força", Valor=75, IndiceJogador=41 },
+            new EstatisticaJ {Id=279, Nome="Equilibrio", Valor=68, IndiceJogador=41},
+            new EstatisticaJ {Id=280, Nome="Sprint", Valor=78, IndiceJogador=41 },
+            new EstatisticaJ {Id=281, Nome="Agilidade", Valor=57, IndiceJogador=41 },
+            new EstatisticaJ {Id=282, Nome="Salto", Valor=75, IndiceJogador=41},
+
+            //Torres
+            new EstatisticaJ {Id=283, Nome="Aceleração", Valor=44, IndiceJogador=42 },
+            new EstatisticaJ {Id=284, Nome="Resistência", Valor=55, IndiceJogador=42 },
+            new EstatisticaJ {Id=285, Nome="Força", Valor=92, IndiceJogador=42 },
+            new EstatisticaJ {Id=286, Nome="Equilibrio", Valor=32, IndiceJogador=42},
+            new EstatisticaJ {Id=287, Nome="Sprint", Valor=55, IndiceJogador=42 },
+            new EstatisticaJ {Id=288, Nome="Agilidade", Valor=34, IndiceJogador=42 },
+            new EstatisticaJ {Id=289, Nome="Salto", Valor=55, IndiceJogador=42},
+
+            //Murillo
+            new EstatisticaJ {Id=290, Nome="Aceleração", Valor=79, IndiceJogador=43 },
+            new EstatisticaJ {Id=291, Nome="Resistência", Valor=78, IndiceJogador=43 },
+            new EstatisticaJ {Id=292, Nome="Força", Valor=71, IndiceJogador=43 },
+            new EstatisticaJ {Id=293, Nome="Equilibrio", Valor=69, IndiceJogador=43},
+            new EstatisticaJ {Id=294, Nome="Sprint", Valor=80, IndiceJogador=43 },
+            new EstatisticaJ {Id=295, Nome="Agilidade", Valor=72, IndiceJogador=43 },
+            new EstatisticaJ {Id=296, Nome="Salto", Valor=87, IndiceJogador=43},
+
+            //Penedo
+            new EstatisticaJ {Id=297, Nome="Posic.", Valor=65, IndiceJogador=44 },
+            new EstatisticaJ {Id=298, Nome="Mergulho GR", Valor=68, IndiceJogador=44 },
+            new EstatisticaJ {Id=299, Nome="Jogo Mãos GR", Valor=62, IndiceJogador=44 },
+            new EstatisticaJ {Id=300, Nome="Jogo Pés GR", Valor=55, IndiceJogador=44 },
+            new EstatisticaJ {Id=301, Nome="Reflexos GR", Valor=75, IndiceJogador=44 },
 
 
             };
@@ -434,6 +533,19 @@ namespace FifaWorldCup.Migrations
             new Jogadores {Id=32, Nome="Bronn", Posicao="DCD", Imagem="Bronn.png", EstatisticaJ=new List<EstatisticaJ>{ estatisticaJ[214], estatisticaJ[215], estatisticaJ[216], estatisticaJ[217], estatisticaJ[218], estatisticaJ[219], estatisticaJ[220]}},
             new Jogadores {Id=33, Nome="Mustapha", Posicao="GR", Imagem="Mustapha.png", EstatisticaJ=new List<EstatisticaJ>{ estatisticaJ[221], estatisticaJ[222], estatisticaJ[223], estatisticaJ[224], estatisticaJ[225]}},
 
+            //Jogadores do Panama
+            new Jogadores {Id=34, Nome="Perez", Posicao="PL", Imagem="Perez.png", EstatisticaJ=new List<EstatisticaJ>{estatisticaJ[226], estatisticaJ[227], estatisticaJ[228], estatisticaJ[229], estatisticaJ[230], estatisticaJ[231], estatisticaJ[232]}},
+            new Jogadores {Id=35, Nome="Rodriguez", Posicao="ME", Imagem="Rodriguez.png", EstatisticaJ=new List<EstatisticaJ>{estatisticaJ[233],estatisticaJ[234],estatisticaJ[235],estatisticaJ[236],estatisticaJ[237],estatisticaJ[238],estatisticaJ[239] }},
+            new Jogadores {Id=36, Nome="Godoy", Posicao="MCE", Imagem="Godoy.png", EstatisticaJ=new List<EstatisticaJ>{estatisticaJ[240], estatisticaJ[241],estatisticaJ[242],estatisticaJ[243],estatisticaJ[244],estatisticaJ[245],estatisticaJ[246] }},
+            new Jogadores {Id=37, Nome="Cooper", Posicao="MCD", Imagem="Cooper.png", EstatisticaJ=new List<EstatisticaJ>{ estatisticaJ[247], estatisticaJ[248], estatisticaJ[249], estatisticaJ[250], estatisticaJ[251], estatisticaJ[252], estatisticaJ[253]}},
+            new Jogadores {Id=38, Nome="Barcenas", Posicao="MD", Imagem="Barcenas.png", EstatisticaJ=new List<EstatisticaJ>{ estatisticaJ[254], estatisticaJ[255], estatisticaJ[256], estatisticaJ[257], estatisticaJ[258], estatisticaJ[259], estatisticaJ[260]}},
+            new Jogadores {Id=39, Nome="Gomez", Posicao="MDC", Imagem="Gomez.png", EstatisticaJ=new List<EstatisticaJ>{ estatisticaJ[261], estatisticaJ[262], estatisticaJ[263], estatisticaJ[264], estatisticaJ[265], estatisticaJ[266], estatisticaJ[267]}},
+            new Jogadores {Id=40, Nome="Davis", Posicao="DE", Imagem="Davis.png", EstatisticaJ=new List<EstatisticaJ>{ estatisticaJ[268], estatisticaJ[269], estatisticaJ[270], estatisticaJ[271], estatisticaJ[272], estatisticaJ[273], estatisticaJ[274]}},
+            new Jogadores {Id=41, Nome="Escobar", Posicao="DC", Imagem="Escobar.png", EstatisticaJ=new List<EstatisticaJ>{ estatisticaJ[275], estatisticaJ[276], estatisticaJ[277], estatisticaJ[278], estatisticaJ[279], estatisticaJ[280], estatisticaJ[281]}},
+            new Jogadores {Id=42, Nome="Torres", Posicao="DC", Imagem="Torres.png", EstatisticaJ=new List<EstatisticaJ>{ estatisticaJ[282], estatisticaJ[283], estatisticaJ[284], estatisticaJ[285], estatisticaJ[286], estatisticaJ[287], estatisticaJ[288]}},
+            new Jogadores {Id=43, Nome="Murillo", Posicao="DCD", Imagem="Murillo.png", EstatisticaJ=new List<EstatisticaJ>{ estatisticaJ[289], estatisticaJ[290], estatisticaJ[291], estatisticaJ[292], estatisticaJ[293], estatisticaJ[294], estatisticaJ[295]}},
+            new Jogadores {Id=44, Nome="Penedo", Posicao="GR", Imagem="Penedo.png", EstatisticaJ=new List<EstatisticaJ>{ estatisticaJ[296], estatisticaJ[297], estatisticaJ[298], estatisticaJ[299], estatisticaJ[300]}},
+
 
             };
             jogadores.ForEach(aa => context.Jogadores.AddOrUpdate(a => a.Nome, aa));
@@ -445,6 +557,7 @@ namespace FifaWorldCup.Migrations
             new Selecoes {Id=1, Nome="Inglaterra", Emblema="Inglaterra.png", Jogadores=new List<Jogadores>{ jogadores[0], jogadores[1], jogadores[2], jogadores[3], jogadores[4], jogadores[5], jogadores[6], jogadores[7], jogadores[8], jogadores[9], jogadores[10] } , Equipamentos=new List<Equipamentos>{ equipamentos[0], equipamentos[1], equipamentos[2]}, EstatisticaS=new List<EstatisticaS>{ estatisticaS[0], estatisticaS[1], estatisticaS[2], estatisticaS[3], estatisticaS[4]}},
             new Selecoes {Id=2, Nome="Belgica", Emblema="Belgica.png", Jogadores=new List<Jogadores>{ jogadores[11], jogadores[12], jogadores[13], jogadores[14], jogadores[15], jogadores[16], jogadores[17], jogadores[18], jogadores[19], jogadores[20], jogadores[21] } , Equipamentos=new List<Equipamentos>{ equipamentos[3], equipamentos[4], equipamentos[5]}, EstatisticaS=new List<EstatisticaS>{ estatisticaS[5], estatisticaS[6], estatisticaS[7], estatisticaS[8], estatisticaS[9]}},
             new Selecoes {Id=3, Nome="Tunisia", Emblema="Tunisia.png", Jogadores=new List<Jogadores>{ jogadores[22], jogadores[23], jogadores[24], jogadores[25], jogadores[26], jogadores[27], jogadores[28], jogadores[29], jogadores[30], jogadores[31], jogadores[32] } , Equipamentos=new List<Equipamentos>{ equipamentos[6], equipamentos[7], equipamentos[8]}, EstatisticaS=new List<EstatisticaS>{ estatisticaS[10], estatisticaS[11], estatisticaS[12], estatisticaS[13], estatisticaS[14]}},
+            new Selecoes {Id=4, Nome="Panama", Emblema="Panama.png", Jogadores=new List<Jogadores>{ jogadores[33], jogadores[34], jogadores[35], jogadores[36], jogadores[37], jogadores[38], jogadores[39], jogadores[40], jogadores[41], jogadores[42], jogadores[43] } , Equipamentos=new List<Equipamentos>{ equipamentos[9], equipamentos[10], equipamentos[11]}, EstatisticaS=new List<EstatisticaS>{ estatisticaS[15], estatisticaS[16], estatisticaS[17], estatisticaS[18], estatisticaS[19]}},
 
             };
             selecoes.ForEach(aa => context.Selecoes.AddOrUpdate(a => a.Nome, aa));
@@ -475,7 +588,7 @@ namespace FifaWorldCup.Migrations
 
             // adiciona GRUPOS
             var grupos = new List<Grupos> {
-            new Grupos {Id=1, Nome="Grupo G", Selecoes= new List<Selecoes>{selecoes[0], selecoes[1], selecoes[2] } },
+            new Grupos {Id=1, Nome="Grupo G", Selecoes= new List<Selecoes>{selecoes[0], selecoes[1], selecoes[2], selecoes[3] } },
          };
             grupos.ForEach(aa => context.Grupos.AddOrUpdate(a => a.Nome, aa));
             context.SaveChanges();
