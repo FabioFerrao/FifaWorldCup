@@ -13,7 +13,7 @@ namespace FifaWorldCup.Models
 
         public string Nome { get; set; }
 
-        public int Valor { get; set; }
+        public string Valor { get; set; }
 
         public int IndiceSelecao { get; set; }
 
