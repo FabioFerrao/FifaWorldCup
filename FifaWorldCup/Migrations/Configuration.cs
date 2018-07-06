@@ -19,12 +19,9 @@ namespace FifaWorldCup.Migrations
 
             //adicionar ESTATISTICA DOS JOGADORES
             var estatisticaJ = new List<EstatisticaJ> {
-            
-                
+
             //---------------------------  INGLATERRA --------------------------------
-
-
-
+            
             //Harry Kane
             new EstatisticaJ {Id=1, Nome="Cabeceamento", Valor=83, IndiceJogador=1 },
             new EstatisticaJ {Id=2, Nome="Pot. Remate", Valor=87, IndiceJogador=1 },
@@ -426,7 +423,7 @@ namespace FifaWorldCup.Migrations
 
 
             };
-            estatisticaJ.ForEach(aa => context.EstatisticaJ.AddOrUpdate(a => a.Nome, aa));
+            estatisticaJ.ForEach(aa => context.EstatisticaJ.AddOrUpdate(a => a.Id, aa));
             context.SaveChanges();
 
             //adicionar estatistica das selecoes
@@ -460,7 +457,7 @@ namespace FifaWorldCup.Migrations
                 new EstatisticaS {Id=19, Nome="Capitão", Valor="Torres", IndiceSelecao=4 },
                 new EstatisticaS {Id=20, Nome="Avaliação Geral", Valor="3", IndiceSelecao=4 },
             };
-            estatisticaS.ForEach(aa => context.EstatisticaS.AddOrUpdate(a => a.Nome, aa));
+            estatisticaS.ForEach(aa => context.EstatisticaS.AddOrUpdate(a => a.Id, aa));
             context.SaveChanges();
 
 
@@ -488,7 +485,7 @@ namespace FifaWorldCup.Migrations
             new Equipamentos {Id=12, Imagem="PanamaGR.png", Nome="Guarda-Redes", idSelecao=4},
 
             };
-            equipamentos.ForEach(aa => context.Equipamentos.AddOrUpdate(a => a.Nome, aa));
+            equipamentos.ForEach(aa => context.Equipamentos.AddOrUpdate(a => a.Id, aa));
             context.SaveChanges();
 
             //adicionar Jogadores
@@ -548,7 +545,7 @@ namespace FifaWorldCup.Migrations
 
 
             };
-            jogadores.ForEach(aa => context.Jogadores.AddOrUpdate(a => a.Nome, aa));
+            jogadores.ForEach(aa => context.Jogadores.AddOrUpdate(a => a.Id, aa));
             context.SaveChanges();
 
             //adicionar Selecoes
@@ -558,39 +555,16 @@ namespace FifaWorldCup.Migrations
             new Selecoes {Id=2, Nome="Belgica", Emblema="Belgica.png", Jogadores=new List<Jogadores>{ jogadores[11], jogadores[12], jogadores[13], jogadores[14], jogadores[15], jogadores[16], jogadores[17], jogadores[18], jogadores[19], jogadores[20], jogadores[21] } , Equipamentos=new List<Equipamentos>{ equipamentos[3], equipamentos[4], equipamentos[5]}, EstatisticaS=new List<EstatisticaS>{ estatisticaS[5], estatisticaS[6], estatisticaS[7], estatisticaS[8], estatisticaS[9]}},
             new Selecoes {Id=3, Nome="Tunisia", Emblema="Tunisia.png", Jogadores=new List<Jogadores>{ jogadores[22], jogadores[23], jogadores[24], jogadores[25], jogadores[26], jogadores[27], jogadores[28], jogadores[29], jogadores[30], jogadores[31], jogadores[32] } , Equipamentos=new List<Equipamentos>{ equipamentos[6], equipamentos[7], equipamentos[8]}, EstatisticaS=new List<EstatisticaS>{ estatisticaS[10], estatisticaS[11], estatisticaS[12], estatisticaS[13], estatisticaS[14]}},
             new Selecoes {Id=4, Nome="Panama", Emblema="Panama.png", Jogadores=new List<Jogadores>{ jogadores[33], jogadores[34], jogadores[35], jogadores[36], jogadores[37], jogadores[38], jogadores[39], jogadores[40], jogadores[41], jogadores[42], jogadores[43] } , Equipamentos=new List<Equipamentos>{ equipamentos[9], equipamentos[10], equipamentos[11]}, EstatisticaS=new List<EstatisticaS>{ estatisticaS[15], estatisticaS[16], estatisticaS[17], estatisticaS[18], estatisticaS[19]}},
-
+        
             };
-            selecoes.ForEach(aa => context.Selecoes.AddOrUpdate(a => a.Nome, aa));
+            selecoes.ForEach(aa => context.Selecoes.AddOrUpdate(a => a.Id, aa));
             context.SaveChanges();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             // adiciona GRUPOS
             var grupos = new List<Grupos> {
             new Grupos {Id=1, Nome="Grupo G", Selecoes= new List<Selecoes>{selecoes[0], selecoes[1], selecoes[2], selecoes[3] } },
          };
-            grupos.ForEach(aa => context.Grupos.AddOrUpdate(a => a.Nome, aa));
+            grupos.ForEach(aa => context.Grupos.AddOrUpdate(a => a.Id, aa));
             context.SaveChanges();
         }
     }

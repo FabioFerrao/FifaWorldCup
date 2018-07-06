@@ -11,8 +11,7 @@ namespace FifaWorldCup.Models
     {
 
         // construtor da classe
-        public FifaDB() : base("FifaDBConnectionString")
-        { }
+        public FifaDB() : base("FifaDBConnectionString"){ }
 
         // identificar as tabelas da base de dados
         public virtual DbSet<Grupos> Grupos { get; set; }
