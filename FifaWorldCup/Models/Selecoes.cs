@@ -21,6 +21,10 @@ namespace FifaWorldCup.Models
         public ICollection<Equipamentos> Equipamentos { get; set; }
 
         public ICollection<EstatisticaS> EstatisticaS { get; set; }
-        
+
+        [ForeignKey("Grupos")]
+        public int IndideGrupo { get; set; }
+        public virtual Grupos Grupos { get; set; }
+
     }
 }
