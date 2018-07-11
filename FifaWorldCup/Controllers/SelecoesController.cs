@@ -1,4 +1,5 @@
-﻿using FifaWorldCup.Models;
+﻿using FifaWorldCup.API;
+using FifaWorldCup.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace FifaWorldCup.Controllers
                 selecao.Id,
                 selecao.Nome,
                 selecao.Emblema,
-                selecao.IndideGrupo
+                selecao.IndiceGrupo
             }).ToList(); //guarda o resultado da query numa lista
 
             //codigo 200 ok com JSON resultante (array dos objetos que representam os grupos)
@@ -30,13 +31,42 @@ namespace FifaWorldCup.Controllers
         [HttpGet, Route("api/Selecao/{id:int}")]
         public IHttpActionResult GetSelecao(int id)
         {
-            var result = db.Selecoes.Where(selecao => selecao.Id == id).Select(selecao => new
-            {  //{ } permite definir um objeto anonimo( sem class) em .net                  
-                selecao.Id,
-                selecao.Nome,
-                selecao.Emblema,
-                selecao.IndideGrupo
-            }).ToList(); //guarda o resultado da query numa lista
+            var result = db.Selecoes
+                .Where(selecao => selecao.Id == id).Select(selecao => new GetDetalhesDaSelecao
+                {  //{ } permite definir um objeto anonimo( sem class) em .net                  
+                    Id = selecao.Id,
+                    Nome = selecao.Nome,
+                    Emblema = selecao.Emblema,
+                    listaDeJogadoresPorSelecao = selecao.Jogadores
+                    .Select(j => new GetDetalhesDaSelecao.JogadoresDaSelecao
+                    {
+                        Id = j.Id,
+                        Nome = j.Nome,
+                        Imagem = j.Imagem,
+                        Posicao = j.Posicao
+                    })
+                    .ToList(),
+
+                    listaDeEstatisticaPorSelecao = selecao.EstatisticaS
+                    .Select(k => new GetDetalhesDaSelecao.EstatisticaDaSelecao
+                    {
+                        Id = k.Id,
+                        Nome = k.Nome,
+                        Valor = k.Valor
+                    })
+                    .ToList(),
+
+                    listaDeEquipamentosPorSelecao = selecao.Equipamentos
+                    .Select(q => new GetDetalhesDaSelecao.EquipamentosDaSelecao
+                    {
+                        Id = q.Id,
+                        Nome = q.Nome,
+                        Imagem = q.Imagem
+                    })
+                    .ToList(),
+
+                })
+                .ToList(); //guarda o resultado da query numa lista
 
             //codigo 200 ok com JSON resultante (array dos objetos que representam os grupos)
             return Ok(result);
@@ -45,14 +75,14 @@ namespace FifaWorldCup.Controllers
         [HttpGet, Route("api/Selecao/{id:int}/Jogadores")]
         public IHttpActionResult GetSelecaoJogadores(int id)
         {
-            var result = db.Jogadores.Where(jogador => jogador.IndiceSelecao == id).Select(jogador => new
-            {  //{ } permite definir um objeto anonimo( sem class) em .net          
-                jogador.Id,
-                jogador.Nome,
-                jogador.Imagem,
-                jogador.Posicao,
-                jogador.IndiceSelecao
-            }).ToList(); //guarda o resultado da query numa lista
+            var result = db.Jogadores
+                .Where(jogador => jogador.IndiceSelecao == id).Select(jogador => new GetDetalhesDaSelecao.JogadoresDaSelecao
+                {  //{ } permite definir um objeto anonimo( sem class) em .net          
+                    Id = jogador.Id,
+                    Nome = jogador.Nome,
+                    Imagem = jogador.Imagem,
+                    Posicao = jogador.Posicao
+                }).ToList(); //guarda o resultado da query numa lista
 
             //codigo 200 ok com JSON resultante (array dos objetos que representam os grupos)
             return Ok(result);

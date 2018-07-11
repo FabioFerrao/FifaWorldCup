@@ -1,15 +1,21 @@
 ﻿function mostraGrupos(grupos) {
+    var selecoesList = document.querySelector('#selecoes');
+    var jogadoresList = document.querySelector('#jogadores');
     var containerGrupos = document.querySelector('#grupos');
+    var selecaoDetalhesList = document.querySelector('#selecaoDetalhes');
+    containerGrupos.innerHTML = "";
+    jogadoresList.innerHTML = "";
+    selecoesList.innerHTML = "";
+    selecaoDetalhesList.innerHTML = "";
 
 
-    var divGrupos = document.createElement('div');
-    containerGrupos.appendChild(divGrupos);
     for (var i = 0; i < grupos.length; i++) {
         var grupo = grupos[i];
     
         var divGrupo = document.createElement('div');
-        divGrupo.setAttribute("data-grupoid", grupo.id);
-        divGrupos.appendChild(divGrupo);
+        divGrupo.setAttribute("id", "divGrupo")
+        divGrupo.setAttribute("data-grupoid", grupo.Id);
+        containerGrupos.appendChild(divGrupo);
         
         var nome = document.createElement('h1');
         nome.textContent = grupos[i].Nome;
@@ -19,8 +25,6 @@
         divGrupo.onclick = function (e) {
             var groupID = this.getAttribute('data-grupoid');
             ecraSelecoes(groupID);
-            var groupList = document.querySelector('#grupos');
-            groupList.style.display = "none";
         };
     }
     

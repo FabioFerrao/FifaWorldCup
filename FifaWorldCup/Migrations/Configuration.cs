@@ -18,7 +18,8 @@ namespace FifaWorldCup.Migrations
         {
             // adiciona GRUPOS
             var grupos = new List<Grupos> {
-            new Grupos {Id=1, Nome="Grupo G" },
+            new Grupos {Id=1, Nome="Grupo B" },
+            new Grupos {Id=2, Nome="Grupo G" }
              };
             grupos.ForEach(aa => context.Grupos.AddOrUpdate(a => a.Id, aa));
             context.SaveChanges();
@@ -26,10 +27,19 @@ namespace FifaWorldCup.Migrations
             //adicionar Selecoes
             var selecoes = new List<Selecoes> {
 
-            new Selecoes {Id=1, Nome="Inglaterra", Emblema="Inglaterra.png", IndideGrupo=1},
-            new Selecoes {Id=2, Nome="Belgica", Emblema="Belgica.png", IndideGrupo=1},
-            new Selecoes {Id=3, Nome="Tunisia", Emblema="Tunisia.png",IndideGrupo=1},
-            new Selecoes {Id=4, Nome="Panama", Emblema="Panama.png", IndideGrupo=1},
+            //Grupo B
+            
+            new Selecoes {Id=1, Nome="Portugal", Emblema="Portugal.png", IndiceGrupo=1},
+            new Selecoes {Id=2, Nome="Espanha", Emblema="Espanha.png", IndiceGrupo=1},
+            new Selecoes {Id=3, Nome="Irão", Emblema="Irao.png",IndiceGrupo=1},
+            new Selecoes {Id=4, Nome="Marrocos", Emblema="Marrocos.png", IndiceGrupo=1},
+
+
+            //Grupo G
+            new Selecoes {Id=5, Nome="Inglaterra", Emblema="Inglaterra.png", IndiceGrupo=2},
+            new Selecoes {Id=6, Nome="Belgica", Emblema="Belgica.png", IndiceGrupo=2},
+            new Selecoes {Id=7, Nome="Tunisia", Emblema="Tunisia.png",IndiceGrupo=2},
+            new Selecoes {Id=8, Nome="Panama", Emblema="Panama.png", IndiceGrupo=2},
 
             };
             selecoes.ForEach(aa => context.Selecoes.AddOrUpdate(a => a.Id, aa));
@@ -41,56 +51,56 @@ namespace FifaWorldCup.Migrations
             var jogadores = new List<Jogadores> {
                 
             //Jogadores de Inglaterra
-            new Jogadores {Id=1, Nome="Harry Kane", Posicao="PLE", Imagem="HarryKane.png",IndiceSelecao=1},
-            new Jogadores {Id=2, Nome="Sterling", Posicao="PLD", Imagem="Sterling.png",IndiceSelecao=1},
-            new Jogadores {Id=3, Nome="Dele Ali", Posicao="MCE", Imagem="DeleAli.png",IndiceSelecao=1},
-            new Jogadores {Id=4, Nome="Henderson", Posicao="MC", Imagem="Henderson.png", IndiceSelecao=1},
-            new Jogadores {Id=5, Nome="Lingard", Posicao="MCD", Imagem="Lingard.png",IndiceSelecao=1},
-            new Jogadores {Id=6, Nome="Young", Posicao="LEO", Imagem="Young.png",IndiceSelecao=1},
-            new Jogadores {Id=7, Nome="Maguire", Posicao="DCE", Imagem="Maguire.png",IndiceSelecao=1},
-            new Jogadores {Id=8, Nome="Stones", Posicao="DC", Imagem="Henderson.png",IndiceSelecao=1},
-            new Jogadores {Id=9, Nome="Walker", Posicao="DCD", Imagem="Walker.png",IndiceSelecao=1},
-            new Jogadores {Id=10, Nome="Trippier", Posicao="LDO", Imagem="Trippier.png",IndiceSelecao=1},
-            new Jogadores {Id=11, Nome="Pickford", Posicao="GR", Imagem="Pickford.png",IndiceSelecao=1},
+            new Jogadores {Id=1, Nome="Harry Kane", Posicao="PLE", Imagem="HarryKane.png",IndiceSelecao=5},
+            new Jogadores {Id=2, Nome="Sterling", Posicao="PLD", Imagem="Sterling.png",IndiceSelecao=5},
+            new Jogadores {Id=3, Nome="Dele Ali", Posicao="MCE", Imagem="DeleAli.png",IndiceSelecao=5},
+            new Jogadores {Id=4, Nome="Henderson", Posicao="MC", Imagem="Henderson.png", IndiceSelecao=5},
+            new Jogadores {Id=5, Nome="Lingard", Posicao="MCD", Imagem="Lingard.png",IndiceSelecao=5},
+            new Jogadores {Id=6, Nome="Young", Posicao="LEO", Imagem="Young.png",IndiceSelecao=5},
+            new Jogadores {Id=7, Nome="Maguire", Posicao="DCE", Imagem="Maguire.png",IndiceSelecao=5},
+            new Jogadores {Id=8, Nome="Stones", Posicao="DC", Imagem="Henderson.png",IndiceSelecao=5},
+            new Jogadores {Id=9, Nome="Walker", Posicao="DCD", Imagem="Walker.png",IndiceSelecao=5},
+            new Jogadores {Id=10, Nome="Trippier", Posicao="LDO", Imagem="Trippier.png",IndiceSelecao=5},
+            new Jogadores {Id=11, Nome="Pickford", Posicao="GR", Imagem="Pickford.png",IndiceSelecao=5},
 
             //Jogadores da Belgica
-            new Jogadores {Id=12, Nome="Lukaku", Posicao="PL", Imagem="Lukaku.png",IndiceSelecao=2},
-            new Jogadores {Id=13, Nome="Hazard", Posicao="AE", Imagem="Hazard.png",IndiceSelecao=2},
-            new Jogadores {Id=14, Nome="Mertens", Posicao="AD", Imagem="Mertens.png", IndiceSelecao=2},
-            new Jogadores {Id=15, Nome="Carrasco", Posicao="ME", Imagem="Carrasco.png",IndiceSelecao=2},
-            new Jogadores {Id=16, Nome="Witsel", Posicao="MCE", Imagem="Witsel.png", IndiceSelecao=2},
-            new Jogadores {Id=17, Nome="De Bruyne", Posicao="MCD", Imagem="DeBruyne.png",IndiceSelecao=2},
-            new Jogadores {Id=18, Nome="Meunier", Posicao="MD", Imagem="Meunier.png", IndiceSelecao=2},
-            new Jogadores {Id=19, Nome="Vertonghen", Posicao="DCE", Imagem="Vertonghen.png",IndiceSelecao=2},
-            new Jogadores {Id=20, Nome="Kompany", Posicao="DC", Imagem="Kompany.png",IndiceSelecao=2},
-            new Jogadores {Id=21, Nome="Alderweireld", Posicao="DCD", Imagem="Alderweireld.png", IndiceSelecao=2},
-            new Jogadores {Id=22, Nome="Courtois", Posicao="GR", Imagem="Courtois.png",IndiceSelecao=2},
+            new Jogadores {Id=12, Nome="Lukaku", Posicao="PL", Imagem="Lukaku.png",IndiceSelecao=6},
+            new Jogadores {Id=13, Nome="Hazard", Posicao="AE", Imagem="Hazard.png",IndiceSelecao=6},
+            new Jogadores {Id=14, Nome="Mertens", Posicao="AD", Imagem="Mertens.png", IndiceSelecao=6},
+            new Jogadores {Id=15, Nome="Carrasco", Posicao="ME", Imagem="Carrasco.png",IndiceSelecao=6},
+            new Jogadores {Id=16, Nome="Witsel", Posicao="MCE", Imagem="Witsel.png", IndiceSelecao=6},
+            new Jogadores {Id=17, Nome="De Bruyne", Posicao="MCD", Imagem="DeBruyne.png",IndiceSelecao=6},
+            new Jogadores {Id=18, Nome="Meunier", Posicao="MD", Imagem="Meunier.png", IndiceSelecao=6},
+            new Jogadores {Id=19, Nome="Vertonghen", Posicao="DCE", Imagem="Vertonghen.png",IndiceSelecao=6},
+            new Jogadores {Id=20, Nome="Kompany", Posicao="DC", Imagem="Kompany.png",IndiceSelecao=6},
+            new Jogadores {Id=21, Nome="Alderweireld", Posicao="DCD", Imagem="Alderweireld.png", IndiceSelecao=6},
+            new Jogadores {Id=22, Nome="Courtois", Posicao="GR", Imagem="Courtois.png",IndiceSelecao=6},
 
             //Jogadores da Tunisia
-            new Jogadores {Id=23, Nome="Khazri", Posicao="PL", Imagem="Khazri.png",IndiceSelecao=3},
-            new Jogadores {Id=24, Nome="Badri", Posicao="ME", Imagem="Badri.png",IndiceSelecao=3},
-            new Jogadores {Id=25, Nome="Khaoui", Posicao="MCE", Imagem="Khaoui.png",IndiceSelecao=3},
-            new Jogadores {Id=26, Nome="Sassi", Posicao="MCD", Imagem="Sassi.png",IndiceSelecao=3},
-            new Jogadores {Id=27, Nome="Ben Youssef", Posicao="MD", Imagem="Ben Youssef_MD.png",IndiceSelecao=3},
-            new Jogadores {Id=28, Nome="Skhiri", Posicao="MDC", Imagem="Skhiri.png",IndiceSelecao=3},
-            new Jogadores {Id=29, Nome="Maâloul", Posicao="DE", Imagem="Maaloul.png",IndiceSelecao=3},
-            new Jogadores {Id=30, Nome="Meriah", Posicao="DC", Imagem="Meriah.png",IndiceSelecao=3},
-            new Jogadores {Id=31, Nome="Ben Youssef", Posicao="DC", Imagem="Ben Youssef_DC.png", IndiceSelecao=3},
-            new Jogadores {Id=32, Nome="Bronn", Posicao="DCD", Imagem="Bronn.png", IndiceSelecao=3},
-            new Jogadores {Id=33, Nome="Mustapha", Posicao="GR", Imagem="Mustapha.png",IndiceSelecao=3},
+            new Jogadores {Id=23, Nome="Khazri", Posicao="PL", Imagem="Khazri.png",IndiceSelecao=7},
+            new Jogadores {Id=24, Nome="Badri", Posicao="ME", Imagem="Badri.png",IndiceSelecao=7},
+            new Jogadores {Id=25, Nome="Khaoui", Posicao="MCE", Imagem="Khaoui.png",IndiceSelecao=7},
+            new Jogadores {Id=26, Nome="Sassi", Posicao="MCD", Imagem="Sassi.png",IndiceSelecao=7},
+            new Jogadores {Id=27, Nome="Ben Youssef", Posicao="MD", Imagem="Ben Youssef_MD.png",IndiceSelecao=7},
+            new Jogadores {Id=28, Nome="Skhiri", Posicao="MDC", Imagem="Skhiri.png",IndiceSelecao=7},
+            new Jogadores {Id=29, Nome="Maâloul", Posicao="DE", Imagem="Maaloul.png",IndiceSelecao=7},
+            new Jogadores {Id=30, Nome="Meriah", Posicao="DC", Imagem="Meriah.png",IndiceSelecao=7},
+            new Jogadores {Id=31, Nome="Ben Youssef", Posicao="DC", Imagem="Ben Youssef_DC.png", IndiceSelecao=7},
+            new Jogadores {Id=32, Nome="Bronn", Posicao="DCD", Imagem="Bronn.png", IndiceSelecao=7},
+            new Jogadores {Id=33, Nome="Mustapha", Posicao="GR", Imagem="Mustapha.png",IndiceSelecao=7},
 
             //Jogadores do Panama
-            new Jogadores {Id=34, Nome="Perez", Posicao="PL", Imagem="Perez.png",IndiceSelecao=4},
-            new Jogadores {Id=35, Nome="Rodriguez", Posicao="ME", Imagem="Rodriguez.png",IndiceSelecao=4},
-            new Jogadores {Id=36, Nome="Godoy", Posicao="MCE", Imagem="Godoy.png",IndiceSelecao=4},
-            new Jogadores {Id=37, Nome="Cooper", Posicao="MCD", Imagem="Cooper.png",IndiceSelecao=4},
-            new Jogadores {Id=38, Nome="Barcenas", Posicao="MD", Imagem="Barcenas.png",IndiceSelecao=4},
-            new Jogadores {Id=39, Nome="Gomez", Posicao="MDC", Imagem="Gomez.png",IndiceSelecao=4},
-            new Jogadores {Id=40, Nome="Davis", Posicao="DE", Imagem="Davis.png",IndiceSelecao=4},
-            new Jogadores {Id=41, Nome="Escobar", Posicao="DC", Imagem="Escobar.png",IndiceSelecao=4},
-            new Jogadores {Id=42, Nome="Torres", Posicao="DC", Imagem="Torres.png",IndiceSelecao=4},
-            new Jogadores {Id=43, Nome="Murillo", Posicao="DCD", Imagem="Murillo.png",IndiceSelecao=4},
-            new Jogadores {Id=44, Nome="Penedo", Posicao="GR", Imagem="Penedo.png",IndiceSelecao=4},
+            new Jogadores {Id=34, Nome="Perez", Posicao="PL", Imagem="Perez.png",IndiceSelecao=8},
+            new Jogadores {Id=35, Nome="Rodriguez", Posicao="ME", Imagem="Rodriguez.png",IndiceSelecao=8},
+            new Jogadores {Id=36, Nome="Godoy", Posicao="MCE", Imagem="Godoy.png",IndiceSelecao=8},
+            new Jogadores {Id=37, Nome="Cooper", Posicao="MCD", Imagem="Cooper.png",IndiceSelecao=8},
+            new Jogadores {Id=38, Nome="Barcenas", Posicao="MD", Imagem="Barcenas.png",IndiceSelecao=8},
+            new Jogadores {Id=39, Nome="Gomez", Posicao="MDC", Imagem="Gomez.png",IndiceSelecao=8},
+            new Jogadores {Id=40, Nome="Davis", Posicao="DE", Imagem="Davis.png",IndiceSelecao=8},
+            new Jogadores {Id=41, Nome="Escobar", Posicao="DC", Imagem="Escobar.png",IndiceSelecao=8},
+            new Jogadores {Id=42, Nome="Torres", Posicao="DC", Imagem="Torres.png",IndiceSelecao=8},
+            new Jogadores {Id=43, Nome="Murillo", Posicao="DCD", Imagem="Murillo.png",IndiceSelecao=8},
+            new Jogadores {Id=44, Nome="Penedo", Posicao="GR", Imagem="Penedo.png",IndiceSelecao=8},
 
             };
             jogadores.ForEach(aa => context.Jogadores.AddOrUpdate(a => a.Id, aa));
@@ -516,32 +526,32 @@ namespace FifaWorldCup.Migrations
             var estatisticaS = new List<EstatisticaS> {
 
                 //Inglaterra
-                new EstatisticaS {Id=1, Nome="Ataque", Valor="83", IndiceSelecao=1 },
-                new EstatisticaS {Id=2, Nome="Meio-Campo", Valor="81", IndiceSelecao=1 },
-                new EstatisticaS {Id=3, Nome="Defesa", Valor="80", IndiceSelecao=1 },
-                new EstatisticaS {Id=4, Nome="Capitão", Valor="Harry Kane", IndiceSelecao=1 },
-                new EstatisticaS {Id=5, Nome="Avaliação Geral", Valor="4,5", IndiceSelecao=1 },
+                new EstatisticaS {Id=1, Nome="Ataque", Valor="83", IndiceSelecao=5 },
+                new EstatisticaS {Id=2, Nome="Meio-Campo", Valor="81", IndiceSelecao=5 },
+                new EstatisticaS {Id=3, Nome="Defesa", Valor="80", IndiceSelecao=5 },
+                new EstatisticaS {Id=4, Nome="Capitão", Valor="Harry Kane", IndiceSelecao=5 },
+                new EstatisticaS {Id=5, Nome="Avaliação Geral", Valor="4,5", IndiceSelecao=5 },
 
                 //Belgica
-                new EstatisticaS {Id=6, Nome="Ataque", Valor="85", IndiceSelecao=2 },
-                new EstatisticaS {Id=7, Nome="Meio-Campo", Valor="83", IndiceSelecao=2 },
-                new EstatisticaS {Id=8, Nome="Defesa", Valor="83", IndiceSelecao=2 },
-                new EstatisticaS {Id=9, Nome="Capitão", Valor="Hazard", IndiceSelecao=2 },
-                new EstatisticaS {Id=10, Nome="Avaliação Geral", Valor="5", IndiceSelecao=2 },
+                new EstatisticaS {Id=6, Nome="Ataque", Valor="85", IndiceSelecao=6 },
+                new EstatisticaS {Id=7, Nome="Meio-Campo", Valor="83", IndiceSelecao=6 },
+                new EstatisticaS {Id=8, Nome="Defesa", Valor="83", IndiceSelecao=6 },
+                new EstatisticaS {Id=9, Nome="Capitão", Valor="Hazard", IndiceSelecao=6 },
+                new EstatisticaS {Id=10, Nome="Avaliação Geral", Valor="5", IndiceSelecao=6},
 
                 //Tunisia
-                new EstatisticaS {Id=11, Nome="Ataque", Valor="75", IndiceSelecao=3 },
-                new EstatisticaS {Id=12, Nome="Meio-Campo", Valor="71", IndiceSelecao=3 },
-                new EstatisticaS {Id=13, Nome="Defesa", Valor="71", IndiceSelecao=3 },
-                new EstatisticaS {Id=14, Nome="Capitão", Valor="Khazri", IndiceSelecao=3 },
-                new EstatisticaS {Id=15, Nome="Avaliação Geral", Valor="3,5", IndiceSelecao=3 },
+                new EstatisticaS {Id=11, Nome="Ataque", Valor="75", IndiceSelecao=7 },
+                new EstatisticaS {Id=12, Nome="Meio-Campo", Valor="71", IndiceSelecao=7 },
+                new EstatisticaS {Id=13, Nome="Defesa", Valor="71", IndiceSelecao=7},
+                new EstatisticaS {Id=14, Nome="Capitão", Valor="Khazri", IndiceSelecao=7 },
+                new EstatisticaS {Id=15, Nome="Avaliação Geral", Valor="3,5", IndiceSelecao=7 },
 
                 //Panama
-                new EstatisticaS {Id=16, Nome="Ataque", Valor="68", IndiceSelecao=4 },
-                new EstatisticaS {Id=17, Nome="Meio-Campo", Valor="68", IndiceSelecao=4 },
-                new EstatisticaS {Id=18, Nome="Defesa", Valor="68", IndiceSelecao=4 },
-                new EstatisticaS {Id=19, Nome="Capitão", Valor="Torres", IndiceSelecao=4 },
-                new EstatisticaS {Id=20, Nome="Avaliação Geral", Valor="3", IndiceSelecao=4 },
+                new EstatisticaS {Id=16, Nome="Ataque", Valor="68", IndiceSelecao=8 },
+                new EstatisticaS {Id=17, Nome="Meio-Campo", Valor="68", IndiceSelecao=8 },
+                new EstatisticaS {Id=18, Nome="Defesa", Valor="68", IndiceSelecao=8 },
+                new EstatisticaS {Id=19, Nome="Capitão", Valor="Torres", IndiceSelecao=8 },
+                new EstatisticaS {Id=20, Nome="Avaliação Geral", Valor="3", IndiceSelecao=8 },
             };
             estatisticaS.ForEach(aa => context.EstatisticaS.AddOrUpdate(a => a.Id, aa));
             context.SaveChanges();
@@ -550,24 +560,24 @@ namespace FifaWorldCup.Migrations
             var equipamentos = new List<Equipamentos> {
 
             //Inglaterra
-            new Equipamentos {Id=1, Imagem="InglaterraPrin.png", Nome="Principal", idSelecao=1},
-            new Equipamentos {Id=2, Imagem="InglaterraSec.png", Nome="Secundário", idSelecao=1},
-            new Equipamentos {Id=3, Imagem="InglaterraGR.png", Nome="Guarda-Redes", idSelecao=1},
+            new Equipamentos {Id=1, Imagem="InglaterraPrin.png", Nome="Principal", idSelecao=5},
+            new Equipamentos {Id=2, Imagem="InglaterraSec.png", Nome="Secundário", idSelecao=5},
+            new Equipamentos {Id=3, Imagem="InglaterraGR.png", Nome="Guarda-Redes", idSelecao=5},
 
             //Bélgica
-            new Equipamentos {Id=4, Imagem="BelgicaPrin.png", Nome="Principal", idSelecao=2},
-            new Equipamentos {Id=5, Imagem="BelgicaSec.png", Nome="Secundário", idSelecao=2},
-            new Equipamentos {Id=6, Imagem="BelgicaGR.png", Nome="Guarda-Redes", idSelecao=2},
+            new Equipamentos {Id=4, Imagem="BelgicaPrin.png", Nome="Principal", idSelecao=6},
+            new Equipamentos {Id=5, Imagem="BelgicaSec.png", Nome="Secundário", idSelecao=6},
+            new Equipamentos {Id=6, Imagem="BelgicaGR.png", Nome="Guarda-Redes", idSelecao=6},
 
             //Tunísia
-            new Equipamentos {Id=7, Imagem="TunisiaPrin.png", Nome="Principal", idSelecao=3},
-            new Equipamentos {Id=8, Imagem="TunisiaSec.png", Nome="Secundário", idSelecao=3},
-            new Equipamentos {Id=9, Imagem="TunisiaGR.png", Nome="Guarda-Redes", idSelecao=3},
+            new Equipamentos {Id=7, Imagem="TunisiaPrin.png", Nome="Principal", idSelecao=7},
+            new Equipamentos {Id=8, Imagem="TunisiaSec.png", Nome="Secundário", idSelecao=7},
+            new Equipamentos {Id=9, Imagem="TunisiaGR.png", Nome="Guarda-Redes", idSelecao=7},
 
             //Panamá
-            new Equipamentos {Id=10, Imagem="PanamaPrin.png", Nome="Principal", idSelecao=4},
-            new Equipamentos {Id=11, Imagem="PanamaSec.png", Nome="Secundário", idSelecao=4},
-            new Equipamentos {Id=12, Imagem="PanamaGR.png", Nome="Guarda-Redes", idSelecao=4},
+            new Equipamentos {Id=10, Imagem="PanamaPrin.png", Nome="Principal", idSelecao=8},
+            new Equipamentos {Id=11, Imagem="PanamaSec.png", Nome="Secundário", idSelecao=8},
+            new Equipamentos {Id=12, Imagem="PanamaGR.png", Nome="Guarda-Redes", idSelecao=8},
 
             };
             equipamentos.ForEach(aa => context.Equipamentos.AddOrUpdate(a => a.Id, aa));

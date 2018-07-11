@@ -23,7 +23,7 @@ namespace FifaWorldCup.Models
         public ICollection<EstatisticaS> EstatisticaS { get; set; }
 
         [ForeignKey("Grupos")]
-        public int IndideGrupo { get; set; }
+        public int IndiceGrupo { get; set; }
         public virtual Grupos Grupos { get; set; }
 
     }

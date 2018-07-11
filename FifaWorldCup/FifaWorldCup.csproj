@@ -125,15 +125,49 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="Imagens\Jogadores\Alderweireld.png" />
+    <Content Include="Imagens\Jogadores\Carrasco.png" />
+    <Content Include="Imagens\Jogadores\Courtois.png" />
+    <Content Include="Imagens\Jogadores\DeBruyne.png" />
+    <Content Include="Imagens\Jogadores\DeleAli.png" />
     <Content Include="Imagens\Jogadores\HarryKane.png" />
+    <Content Include="Imagens\Jogadores\Hazard.png" />
+    <Content Include="Imagens\Jogadores\Henderson.png" />
+    <Content Include="Imagens\Jogadores\Kompany.png" />
+    <Content Include="Imagens\Jogadores\Lingard.png" />
+    <Content Include="Imagens\Jogadores\Lukaku.png" />
+    <Content Include="Imagens\Jogadores\Maguire.png" />
+    <Content Include="Imagens\Jogadores\Mertens.png" />
+    <Content Include="Imagens\Jogadores\Meunier.png" />
+    <Content Include="Imagens\Jogadores\Pickford.png" />
+    <Content Include="Imagens\Jogadores\Sterling.png" />
+    <Content Include="Imagens\Jogadores\Stones.png" />
+    <Content Include="Imagens\Jogadores\Trippier.png" />
+    <Content Include="Imagens\Jogadores\Vertonghen.png" />
+    <Content Include="Imagens\Jogadores\Walker.png" />
+    <Content Include="Imagens\Jogadores\Witsel.png" />
+    <Content Include="Imagens\Jogadores\Young.png" />
+    <Content Include="Imagens\Logo.png" />
+    <Content Include="Imagens\Selecoes\Belgica.png" />
+    <Content Include="Imagens\Selecoes\Equipamentos\BelgicaGR.png" />
+    <Content Include="Imagens\Selecoes\Equipamentos\BelgicaPrin.png" />
+    <Content Include="Imagens\Selecoes\Equipamentos\BelgicaSec.png" />
     <Content Include="Imagens\Selecoes\Equipamentos\InglaterraGR.png" />
     <Content Include="Imagens\Selecoes\Equipamentos\InglaterraPrin.png" />
     <Content Include="Imagens\Selecoes\Equipamentos\InglaterraSec.png" />
+    <Content Include="Imagens\Selecoes\Espanha.png" />
     <Content Include="Imagens\Selecoes\Inglaterra.png" />
+    <Content Include="Imagens\Selecoes\Irao.png" />
+    <Content Include="Imagens\Selecoes\Marrocos.png" />
+    <Content Include="Imagens\Selecoes\Panama.png" />
+    <Content Include="Imagens\Selecoes\Portugal.png" />
+    <Content Include="Imagens\Selecoes\Tunisia.png" />
+    <Content Include="Index.html" />
     <Content Include="JavaScript\grupo.js" />
     <Content Include="JavaScript\init.js" />
     <Content Include="JavaScript\jogador.js" />
     <Content Include="JavaScript\selecao.js" />
+    <Content Include="JavaScript\selecaoDetalhes.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -178,6 +212,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\GetGrupos.cs" />
+    <Compile Include="API\GetDetalhesDaSelecao.cs" />
+    <Compile Include="API\GetSelecoes.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -214,8 +251,6 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

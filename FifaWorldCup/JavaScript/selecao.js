@@ -1,87 +1,46 @@
 ﻿function mostraSelecoes(selecoes) {
-    var containerSelecoes = document.querySelector('#selecoes');
+    var gruposList = document.querySelector('#grupos');
+    var selecoesList = document.querySelector('#selecoes');
+    var jogadoresList = document.querySelector('#jogadores');
+    var selecaoDetalhesList = document.querySelector('#selecaoDetalhes');
+    gruposList.style.display = "none";
+    jogadoresList.style.display = "none";
+    selecaoDetalhesList.style.display = "none";
+    selecoesList.style.display = "block";
+    jogadoresList.innerHTML = "";
+    gruposList.innerHTML = "";
+    selecaoDetalhesList.innerHTML = "";
 
     for (var i = 0; i < selecoes.length; i++) {
 
         var selecao = selecoes[i];
 
+        var divSelecao = document.createElement('div');
+        divSelecao.setAttribute("id", "divSelecao")
+        divSelecao.setAttribute("data-selecaoid", selecao.Id);
+        selecoesList.appendChild(divSelecao);
+
+
+        //funcao para ir buscar os detalhes da selecao selecionada
+        divSelecao.onclick = function (e) {
+            var selecaoId = this.getAttribute('data-selecaoid');
+            ecraSelecaoDetalhes(selecaoId);
+        };
+
         var nome = document.createElement('h1');
         nome.textContent = selecao.Nome;
-        containerSelecoes.appendChild(nome);
-
+        divSelecao.appendChild(nome);
+        
         var emblema = document.createElement('img');
-        emblema.src = "~/Imagens/Selecoes/" + selecao.Emblema;
-        containerSelecoes.appendChild(emblema);
-
-        var divEstatisticaSelecao = document.createElement('div');
-        containerSelecoes.appendChild(divEstatisticaSelecao);
-
-        //Estatistica da Selecao
-        for (var z = 0; z < selecao.EstatisticaS.length; z++) {
-
-            var estatisticaS = selecao.EstatisticaS[z];
-
-            var nomeEstatistica = document.createElement('h3');
-            nomeEstatistica.textContent = estatisticaS.Nome;
-            divEstatisticaSelecao.appendChild(nomeEstatistica);
-
-            var valorEstatistica = document.createElement('p');
-            valorEstatistica.textContent = estatisticaS.Valor;
-            divEstatisticaSelecao.appendChild(valorEstatistica);
-
-        }
-
-        var divEquipamentosSelecao = document.createElement('div');
-        containerSelecoes.appendChild(divEquipamentosSelecao);
-        //Equipamentos da Selecao
-        for (var j = 0; j < selecao.Equipamentos.length; j++) {
-
-            var equipamento = selecao.Equipamentos[j];
-
-            var nomeEstatistica = document.createElement('h3');
-            nomeEstatistica.textContent = equipamento.Nome;
-            divEquipamentosSelecao.appendChild(nomeEstatistica);
-
-            var imgEquipamento = document.createElement('img');
-            imgEquipamento.src = "~/Imagens/Selecoes/Equipamentos/" + equipamento.Imagem;
-            divEquipamentosSelecao.appendChild(imgEquipamento);
-
-        }
-
-        var divJogadoresSelecao = document.createElement('div');
-        containerSelecoes.appendChild(divJogadoresSelecao);
-        //Jogadores da Selecao
-        for (var k = 0; k < selecao.Jogadores.length; k++) {
-
-            var jogador = selecao.Jogadores[k];
-
-            var divJogador = document.createElement('div');
-            divJogador.setAttribute("data-jogadorid", jogador.id);
-            divGrupos.appendChild(divJogador);
-
-            //funcao para ir buscar os jogadores dessa selecao
-            divJogador.onclick = function (e) {
-                var jogadorID = this.getAttribute('data-jogadorid');
-                ecraJogadores(jogadorID);
-                var selecoesList = document.querySelector('#selecoes');
-                selecoesList.style.display = "none";
-            };
-
-            var nomeJogador = document.createElement('h3');
-            nomeJogador.textContent = jogador.Nome;
-            divJogadoresSelecao.appendChild(nomeJogador);
-
-            var imgJogador = document.createElement('img');
-            imgJogador.src = "~/Imagens/Jogadores/" + jogador.Imagem;
-            divJogadoresSelecao.appendChild(imgJogador);
-            
-        }
+        emblema.src = "Imagens/Selecoes/" + selecao.Emblema;
+        divSelecao.appendChild(emblema);
+        
     }
 
 }
 
-function getSelecoes() {
-    var url = "/api/Selecoes";
+function getSelecoes(idGrupo) {
+    var url = "/api/Grupo/" + idGrupo + "/Selecoes";
 
     return fetch(url, { headers: { Accept: 'application/json' } })
         .then(function (resposta) {
@@ -93,10 +52,10 @@ function getSelecoes() {
         });
 }
 
-function ecraSelecoes() {
-    return getSelecoes()
+function ecraSelecoes(selecoes) {
+    return getSelecoes(selecoes)
         .then(function (selecoes) {
-            mostraGrupos(selecoes);
+            mostraSelecoes(selecoes);
         })
         .catch(function (erro) {
             console.error(erro);
