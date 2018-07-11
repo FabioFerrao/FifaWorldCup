@@ -86,7 +86,7 @@ namespace FifaWorldCup.Migrations
             new Jogadores {Id=29, Nome="Maâloul", Posicao="DE", Imagem="Maaloul.png",IndiceSelecao=7},
             new Jogadores {Id=30, Nome="Meriah", Posicao="DC", Imagem="Meriah.png",IndiceSelecao=7},
             new Jogadores {Id=31, Nome="Ben Youssef", Posicao="DC", Imagem="Ben_Youssef_DC.png", IndiceSelecao=7},
-            new Jogadores {Id=32, Nome="Bronn", Posicao="DCD", Imagem="Bronn.png", IndiceSelecao=7},
+            new Jogadores {Id=32, Nome="Bronn", Posicao="DD", Imagem="Bronn.png", IndiceSelecao=7},
             new Jogadores {Id=33, Nome="Mustapha", Posicao="GR", Imagem="Mustapha.png",IndiceSelecao=7},
 
             //Jogadores do Panama
@@ -99,8 +99,60 @@ namespace FifaWorldCup.Migrations
             new Jogadores {Id=40, Nome="Davis", Posicao="DE", Imagem="Davis.png",IndiceSelecao=8},
             new Jogadores {Id=41, Nome="Escobar", Posicao="DC", Imagem="Escobar.png",IndiceSelecao=8},
             new Jogadores {Id=42, Nome="Torres", Posicao="DC", Imagem="Torres.png",IndiceSelecao=8},
-            new Jogadores {Id=43, Nome="Murillo", Posicao="DCD", Imagem="Murillo.png",IndiceSelecao=8},
+            new Jogadores {Id=43, Nome="Murillo", Posicao="DD", Imagem="Murillo.png",IndiceSelecao=8},
             new Jogadores {Id=44, Nome="Penedo", Posicao="GR", Imagem="Penedo.png",IndiceSelecao=8},
+
+            //Jogadores de Portugal
+            new Jogadores {Id=45, Nome="C.Ronaldo", Posicao="PLE", Imagem="C_Ronaldo.png",IndiceSelecao=1},
+            new Jogadores {Id=46, Nome="A.Siva", Posicao="PLD", Imagem="A_Silva.png",IndiceSelecao=1},
+            new Jogadores {Id=47, Nome="J.Mario", Posicao="ME", Imagem="J_Mario.png",IndiceSelecao=1},
+            new Jogadores {Id=48, Nome="Adrien", Posicao="MC", Imagem="Adrien.png",IndiceSelecao=1},
+            new Jogadores {Id=49, Nome="Quaresma", Posicao="MD", Imagem="Quaresma.png",IndiceSelecao=1},
+            new Jogadores {Id=50, Nome="W.Carvalho", Posicao="MDC", Imagem="W_Carvalho.png",IndiceSelecao=1},
+            new Jogadores {Id=51, Nome="Guerreiro", Posicao="DE", Imagem="Guerreiro.png",IndiceSelecao=1},
+            new Jogadores {Id=52, Nome="Fonte", Posicao="DC", Imagem="Fonte.png",IndiceSelecao=1},
+            new Jogadores {Id=53, Nome="Pepe", Posicao="DC", Imagem="Pepe.png",IndiceSelecao=1},
+            new Jogadores {Id=54, Nome="Cedric", Posicao="DD", Imagem="Cedric.png",IndiceSelecao=1},
+            new Jogadores {Id=55, Nome="Patricio", Posicao="GR", Imagem="Patricio.png",IndiceSelecao=1},
+            
+            //Jogadores de Espanha
+            new Jogadores {Id=56, Nome="Costa", Posicao="PL", Imagem="Costa.png",IndiceSelecao=2},
+            new Jogadores {Id=57, Nome="Isco", Posicao="EE", Imagem="Isco.png",IndiceSelecao=2},
+            new Jogadores {Id=58, Nome="D.Silva", Posicao="ED", Imagem="D_Silva.png",IndiceSelecao=2},
+            new Jogadores {Id=59, Nome="Iniesta", Posicao="MC", Imagem="Iniesta.png",IndiceSelecao=2},
+            new Jogadores {Id=60, Nome="Thiago", Posicao="MC", Imagem="Thiago.png",IndiceSelecao=2},
+            new Jogadores {Id=61, Nome="Busquets", Posicao="MDC", Imagem="Busquets.png",IndiceSelecao=2},
+            new Jogadores {Id=62, Nome="J.Alba", Posicao="DE", Imagem="J_Alba.png",IndiceSelecao=2},
+            new Jogadores {Id=63, Nome="S.Ramos", Posicao="DC", Imagem="S_Ramos.png",IndiceSelecao=2},
+            new Jogadores {Id=64, Nome="Pique", Posicao="DC", Imagem="Pique.png",IndiceSelecao=2},
+            new Jogadores {Id=65, Nome="Carvajal", Posicao="DD", Imagem="Carvajal.png",IndiceSelecao=2},
+            new Jogadores {Id=66, Nome="De Gea", Posicao="GR", Imagem="De_Gea.png",IndiceSelecao=2},
+
+            //Jogadores do Irao
+            new Jogadores {Id=67, Nome="Azmoun", Posicao="PL", Imagem="Azmoun.png",IndiceSelecao=3},
+            new Jogadores {Id=68, Nome="Taremi", Posicao="ME", Imagem="Taremi.png",IndiceSelecao=3},
+            new Jogadores {Id=69, Nome="Amiri", Posicao="MC", Imagem="Amiri.png",IndiceSelecao=3},
+            new Jogadores {Id=70, Nome="Ebrahimi", Posicao="MC", Imagem="Ebrahimi.png",IndiceSelecao=3},
+            new Jogadores {Id=71, Nome="Jahanbakhsh", Posicao="MD", Imagem="Jahanbakhsh.png",IndiceSelecao=3},
+            new Jogadores {Id=72, Nome="Ezatolahi", Posicao="MDC", Imagem="Ezatolahi.png",IndiceSelecao=3},
+            new Jogadores {Id=73, Nome="Safi", Posicao="DE", Imagem="Safi.png",IndiceSelecao=3},
+            new Jogadores {Id=74, Nome="Hosseini", Posicao="DC", Imagem="Hosseini.png",IndiceSelecao=3},
+            new Jogadores {Id=75, Nome="Pouraliganji", Posicao="DC", Imagem="Pouraliganji.png",IndiceSelecao=3},
+            new Jogadores {Id=76, Nome="Rezaeian", Posicao="DD", Imagem="Rezaeian.png",IndiceSelecao=3},
+            new Jogadores {Id=77, Nome="Beiranvand", Posicao="GR", Imagem="Beiranvand.png",IndiceSelecao=3},
+
+            //Jogadores de Marrocos
+            new Jogadores {Id=67, Nome="Boutaib", Posicao="PL", Imagem="Boutaib.png",IndiceSelecao=4},
+            new Jogadores {Id=68, Nome="Ziyach", Posicao="ME", Imagem="Ziyach.png",IndiceSelecao=4},
+            new Jogadores {Id=69, Nome="Amrabat", Posicao="MD", Imagem="Amrabat.png",IndiceSelecao=4},
+            new Jogadores {Id=70, Nome="Belhanda", Posicao="MC", Imagem="Belhanda.png",IndiceSelecao=4},
+            new Jogadores {Id=71, Nome="Boussoufa", Posicao="MC", Imagem="Boussoufa.png",IndiceSelecao=4},
+            new Jogadores {Id=72, Nome="Ahmadi", Posicao="MDC", Imagem="Ahmadi.png",IndiceSelecao=4},
+            new Jogadores {Id=73, Nome="Hakimi", Posicao="DE", Imagem="Hakimi.png",IndiceSelecao=4},
+            new Jogadores {Id=74, Nome="Saiss", Posicao="DC", Imagem="Saiss.png",IndiceSelecao=4},
+            new Jogadores {Id=75, Nome="Benatia", Posicao="DC", Imagem="Benatia.png",IndiceSelecao=4},
+            new Jogadores {Id=76, Nome="Dirar", Posicao="DD", Imagem="Dirar.png",IndiceSelecao=4},
+            new Jogadores {Id=77, Nome="Kajoui", Posicao="GR", Imagem="Kajoui.png",IndiceSelecao=4},
 
             };
             jogadores.ForEach(aa => context.Jogadores.AddOrUpdate(a => a.Id, aa));
@@ -516,6 +568,114 @@ namespace FifaWorldCup.Migrations
             new EstatisticaJ {Id=301, Nome="Reflexos GR", Valor=75, IndiceJogador=44 },
 
 
+
+             //---------------------------  PORTUGAL  --------------------------------
+            
+            //C RONALDO
+            new EstatisticaJ {Id=302, Nome="Cabeceamento", Valor=95, IndiceJogador=45 },
+            new EstatisticaJ {Id=303, Nome="Pot. Remate", Valor=93, IndiceJogador=45 },
+            new EstatisticaJ {Id=304, Nome="Finalização", Valor=94, IndiceJogador=45 },
+            new EstatisticaJ {Id=305, Nome="Rem. Longe", Valor=90, IndiceJogador=45 },
+            new EstatisticaJ {Id=306, Nome="Efeito", Valor=84, IndiceJogador=45 },
+            new EstatisticaJ {Id=307, Nome="Prec. Livres", Valor=79, IndiceJogador=45 },
+            new EstatisticaJ {Id=308, Nome="Penaltis", Valor=86, IndiceJogador=45 },
+            new EstatisticaJ {Id=309, Nome="Remates de 1ª", Valor=77, IndiceJogador=45 },
+
+            //A SILVA
+            new EstatisticaJ {Id=310, Nome="Aceleração", Valor=77, IndiceJogador=46 },
+            new EstatisticaJ {Id=311, Nome="Resistência", Valor=86, IndiceJogador=46 },
+            new EstatisticaJ {Id=312, Nome="Força", Valor=79, IndiceJogador=46 },
+            new EstatisticaJ {Id=313, Nome="Equilibrio", Valor=72, IndiceJogador=46 },
+            new EstatisticaJ {Id=314, Nome="Sprint", Valor=85, IndiceJogador=46 },
+            new EstatisticaJ {Id=315, Nome="Agilidade", Valor=83, IndiceJogador=46 },
+            new EstatisticaJ {Id=316, Nome="Salto", Valor=84, IndiceJogador=46 },
+                             
+            //JOAO MARIO
+            new EstatisticaJ {Id=310, Nome="Agressividade", Valor=66, IndiceJogador=47 },
+            new EstatisticaJ {Id=311, Nome="Reflexos", Valor=84, IndiceJogador=47 },
+            new EstatisticaJ {Id=312, Nome="Pos. Ataque", Valor=82, IndiceJogador=47 },
+            new EstatisticaJ {Id=313, Nome="Interceções", Valor=77, IndiceJogador=47 },
+            new EstatisticaJ {Id=314, Nome="Visão", Valor=85, IndiceJogador=47 },
+            new EstatisticaJ {Id=315, Nome="Compostura", Valor=85, IndiceJogador=47 },
+                            
+            //Adrien
+            new EstatisticaJ {Id=316, Nome="Aceleração", Valor=64, IndiceJogador=48 },
+            new EstatisticaJ {Id=317, Nome="Resistência", Valor=89, IndiceJogador=48 },
+            new EstatisticaJ {Id=318, Nome="Força", Valor=62, IndiceJogador=48},
+            new EstatisticaJ {Id=319, Nome="Equilibrio", Valor=67, IndiceJogador=48 },
+            new EstatisticaJ {Id=320, Nome="Sprint", Valor=65, IndiceJogador=48 },
+            new EstatisticaJ {Id=321, Nome="Agilidade", Valor=73, IndiceJogador=48 },
+            new EstatisticaJ {Id=322, Nome="Salto", Valor=56, IndiceJogador=48 },
+            
+            //Quaresma
+            new EstatisticaJ {Id=323, Nome="Aceleração", Valor=85, IndiceJogador=49 },
+            new EstatisticaJ {Id=324, Nome="Resistência", Valor=69, IndiceJogador=49 },
+            new EstatisticaJ {Id=325, Nome="Força", Valor=54, IndiceJogador=49 },
+            new EstatisticaJ {Id=326, Nome="Equilibrio", Valor=84, IndiceJogador=49 },
+            new EstatisticaJ {Id=327, Nome="Sprint", Valor=82, IndiceJogador=49 },
+            new EstatisticaJ {Id=328, Nome="Agilidade", Valor=91, IndiceJogador=49 },
+            new EstatisticaJ {Id=329, Nome="Salto", Valor=63, IndiceJogador=49 },
+
+            //W CARVALHO
+            new EstatisticaJ {Id=330, Nome="Aceleração", Valor=52, IndiceJogador=50 },
+            new EstatisticaJ {Id=331, Nome="Resistência", Valor=84, IndiceJogador=50 },
+            new EstatisticaJ {Id=332, Nome="Força", Valor=88, IndiceJogador=50 },
+            new EstatisticaJ {Id=333, Nome="Equilibrio", Valor=50, IndiceJogador=50 },
+            new EstatisticaJ {Id=334, Nome="Sprint", Valor=53, IndiceJogador=50 },
+            new EstatisticaJ {Id=335, Nome="Agilidade", Valor=45, IndiceJogador=50 },
+            new EstatisticaJ {Id=336, Nome="Salto", Valor=68, IndiceJogador=50 },
+            
+             //GUERREIRO
+            new EstatisticaJ {Id=337, Nome="Aceleração", Valor=84, IndiceJogador=51 },
+            new EstatisticaJ {Id=338, Nome="Resistência", Valor=83, IndiceJogador=51 },
+            new EstatisticaJ {Id=339, Nome="Força", Valor=54, IndiceJogador=51 },
+            new EstatisticaJ {Id=340, Nome="Equilibrio", Valor=86, IndiceJogador=51 },
+            new EstatisticaJ {Id=341, Nome="Sprint", Valor=74, IndiceJogador=51 },
+            new EstatisticaJ {Id=342, Nome="Agilidade", Valor=88, IndiceJogador=51 },
+            new EstatisticaJ {Id=343, Nome="Salto", Valor=66, IndiceJogador=51 },
+           
+             //Fonte
+            new EstatisticaJ {Id=344, Nome="Aceleração", Valor=53, IndiceJogador=52 },
+            new EstatisticaJ {Id=345, Nome="Resistência", Valor=76, IndiceJogador=52 },
+            new EstatisticaJ {Id=346, Nome="Força", Valor=82, IndiceJogador=52 },
+            new EstatisticaJ {Id=347, Nome="Equilibrio", Valor=54, IndiceJogador=52 },
+            new EstatisticaJ {Id=348, Nome="Sprint", Valor=59, IndiceJogador=52 },
+            new EstatisticaJ {Id=349, Nome="Agilidade", Valor=58, IndiceJogador=52 },
+            new EstatisticaJ {Id=350, Nome="Salto", Valor=78, IndiceJogador=52 },
+
+             //Pepe
+            new EstatisticaJ {Id=351, Nome="Aceleração", Valor=68, IndiceJogador=53 },
+            new EstatisticaJ {Id=352, Nome="Resistência", Valor=81, IndiceJogador=53 },
+            new EstatisticaJ {Id=353, Nome="Força", Valor=84, IndiceJogador=53 },
+            new EstatisticaJ {Id=354, Nome="Equilibrio", Valor=50, IndiceJogador=53 },
+            new EstatisticaJ {Id=355, Nome="Sprint", Valor=75, IndiceJogador=53 },
+            new EstatisticaJ {Id=356, Nome="Agilidade", Valor=64, IndiceJogador=53 },
+            new EstatisticaJ {Id=357, Nome="Salto", Valor=78, IndiceJogador=53 },
+
+             //Cedric
+            new EstatisticaJ {Id=358, Nome="Aceleração", Valor=86, IndiceJogador=54 },
+            new EstatisticaJ {Id=359, Nome="Resistência", Valor=88, IndiceJogador=54 },
+            new EstatisticaJ {Id=360, Nome="Força", Valor=63, IndiceJogador=54 },
+            new EstatisticaJ {Id=361, Nome="Equilibrio", Valor=83, IndiceJogador=54 },
+            new EstatisticaJ {Id=362, Nome="Sprint", Valor=83, IndiceJogador=54 },
+            new EstatisticaJ {Id=363, Nome="Agilidade", Valor=76, IndiceJogador=54 },
+            new EstatisticaJ {Id=364, Nome="Salto", Valor=73, IndiceJogador=54 },
+
+             //Patricio
+            new EstatisticaJ {Id=365, Nome="Posic.", Valor=79, IndiceJogador=55 },
+            new EstatisticaJ {Id=366, Nome="Mergulho GR", Valor=85, IndiceJogador=55 },
+            new EstatisticaJ {Id=367, Nome="Jogo Mãos GR", Valor=82, IndiceJogador=55 },
+            new EstatisticaJ {Id=368, Nome="Jogo Pés GR", Valor=85, IndiceJogador=55 },
+            new EstatisticaJ {Id=369, Nome="Reflexos GR", Valor=83, IndiceJogador=55 },
+
+
+
+
+
+
+
+
+
             };
             estatisticaJ.ForEach(aa => context.EstatisticaJ.AddOrUpdate(a => a.Id, aa));
             context.SaveChanges();
@@ -545,13 +705,41 @@ namespace FifaWorldCup.Migrations
                 new EstatisticaS {Id=13, Nome="Defesa", Valor="71", IndiceSelecao=7},
                 new EstatisticaS {Id=14, Nome="Capitão", Valor="Khazri", IndiceSelecao=7 },
                 new EstatisticaS {Id=15, Nome="Avaliação Geral", Valor="3,5", IndiceSelecao=7 },
-
+                
                 //Panama
                 new EstatisticaS {Id=16, Nome="Ataque", Valor="68", IndiceSelecao=8 },
                 new EstatisticaS {Id=17, Nome="Meio-Campo", Valor="68", IndiceSelecao=8 },
                 new EstatisticaS {Id=18, Nome="Defesa", Valor="68", IndiceSelecao=8 },
                 new EstatisticaS {Id=19, Nome="Capitão", Valor="Torres", IndiceSelecao=8 },
                 new EstatisticaS {Id=20, Nome="Avaliação Geral", Valor="3", IndiceSelecao=8 },
+
+                //Portugal
+                new EstatisticaS {Id=21, Nome="Ataque", Valor="88", IndiceSelecao=1 },
+                new EstatisticaS {Id=22, Nome="Meio-Campo", Valor="83", IndiceSelecao=1 },
+                new EstatisticaS {Id=23, Nome="Defesa", Valor="82", IndiceSelecao=1 },
+                new EstatisticaS {Id=24, Nome="Capitão", Valor="C.Ronaldo", IndiceSelecao=1},
+                new EstatisticaS {Id=25, Nome="Avaliação Geral", Valor="5", IndiceSelecao=1 },
+
+                //Espanha
+                new EstatisticaS {Id=26, Nome="Ataque", Valor="84", IndiceSelecao=2 },
+                new EstatisticaS {Id=27, Nome="Meio-Campo", Valor="86", IndiceSelecao=2 },
+                new EstatisticaS {Id=28, Nome="Defesa", Valor="85", IndiceSelecao=2 },
+                new EstatisticaS {Id=29, Nome="Capitão", Valor="S.Ramos", IndiceSelecao=2 },
+                new EstatisticaS {Id=30, Nome="Avaliação Geral", Valor="5", IndiceSelecao=2 },
+
+                //Irao
+                new EstatisticaS {Id=31, Nome="Ataque", Valor="76", IndiceSelecao=3 },
+                new EstatisticaS {Id=32, Nome="Meio-Campo", Valor="71", IndiceSelecao=3 },
+                new EstatisticaS {Id=33, Nome="Defesa", Valor="71", IndiceSelecao=3 },
+                new EstatisticaS {Id=34, Nome="Capitão", Valor="H.Safi", IndiceSelecao=3 },
+                new EstatisticaS {Id=35, Nome="Avaliação Geral", Valor="3,5", IndiceSelecao=3 },
+
+                //Marrocos
+                new EstatisticaS {Id=36, Nome="Ataque", Valor="74", IndiceSelecao=4 },
+                new EstatisticaS {Id=37, Nome="Meio-Campo", Valor="77", IndiceSelecao=4 },
+                new EstatisticaS {Id=38, Nome="Defesa", Valor="77", IndiceSelecao=4 },
+                new EstatisticaS {Id=39, Nome="Capitão", Valor="Benatia", IndiceSelecao=4 },
+                new EstatisticaS {Id=40, Nome="Avaliação Geral", Valor="4", IndiceSelecao=4 },
             };
             estatisticaS.ForEach(aa => context.EstatisticaS.AddOrUpdate(a => a.Id, aa));
             context.SaveChanges();
@@ -573,11 +761,31 @@ namespace FifaWorldCup.Migrations
             new Equipamentos {Id=7, Imagem="TunisiaPrin.png", Nome="Principal", idSelecao=7},
             new Equipamentos {Id=8, Imagem="TunisiaSec.png", Nome="Secundário", idSelecao=7},
             new Equipamentos {Id=9, Imagem="TunisiaGR.png", Nome="Guarda-Redes", idSelecao=7},
-
+            
             //Panamá
             new Equipamentos {Id=10, Imagem="PanamaPrin.png", Nome="Principal", idSelecao=8},
             new Equipamentos {Id=11, Imagem="PanamaSec.png", Nome="Secundário", idSelecao=8},
             new Equipamentos {Id=12, Imagem="PanamaGR.png", Nome="Guarda-Redes", idSelecao=8},
+
+            //Portugal
+            new Equipamentos {Id=13, Imagem="PortugalPrin.png", Nome="Principal", idSelecao=1},
+            new Equipamentos {Id=14, Imagem="PortugalSec.png", Nome="Secundário", idSelecao=1},
+            new Equipamentos {Id=15, Imagem="PortugalGR.png", Nome="Guarda-Redes", idSelecao=1},
+
+            //Espanha
+            new Equipamentos {Id=16, Imagem="EspanhaPrin.png", Nome="Principal", idSelecao=2},
+            new Equipamentos {Id=17, Imagem="EspanhaSec.png", Nome="Secundário", idSelecao=2},
+            new Equipamentos {Id=18, Imagem="EspanhaGR.png", Nome="Guarda-Redes", idSelecao=2},
+
+            //Irão
+            new Equipamentos {Id=19, Imagem="IraoPrin.png", Nome="Principal", idSelecao=3},
+            new Equipamentos {Id=20, Imagem="IraoSec.png", Nome="Secundário", idSelecao=3},
+            new Equipamentos {Id=21, Imagem="IraoGR.png", Nome="Guarda-Redes", idSelecao=3},
+            
+            //Marrocos
+            new Equipamentos {Id=22, Imagem="MarrocosPrin.png", Nome="Principal", idSelecao=4},
+            new Equipamentos {Id=23, Imagem="MarrocosSec.png", Nome="Secundário", idSelecao=4},
+            new Equipamentos {Id=24, Imagem="MarrocosGR.png", Nome="Guarda-Redes", idSelecao=4},
 
             };
             equipamentos.ForEach(aa => context.Equipamentos.AddOrUpdate(a => a.Id, aa));
