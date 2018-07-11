@@ -45,9 +45,10 @@
             var equipamento = selecDetalhes.listaDeEquipamentosPorSelecao[k];
             
             var imagemEquipamento = document.createElement('img');
+
             imagemEquipamento.src = "Imagens/Selecoes/Equipamentos/" + equipamento.Imagem;
             selecaoDetalhesList.appendChild(imagemEquipamento);
-
+            imagemEquipamento.setAttribute("style", "width:109px; height:125px;");
             var nomeEquipamento = document.createElement('h3');
             nomeEquipamento.textContent = equipamento.Nome;
             selecaoDetalhesList.appendChild(nomeEquipamento);

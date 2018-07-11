@@ -81,11 +81,11 @@ namespace FifaWorldCup.Migrations
             new Jogadores {Id=24, Nome="Badri", Posicao="ME", Imagem="Badri.png",IndiceSelecao=7},
             new Jogadores {Id=25, Nome="Khaoui", Posicao="MCE", Imagem="Khaoui.png",IndiceSelecao=7},
             new Jogadores {Id=26, Nome="Sassi", Posicao="MCD", Imagem="Sassi.png",IndiceSelecao=7},
-            new Jogadores {Id=27, Nome="Ben Youssef", Posicao="MD", Imagem="Ben Youssef_MD.png",IndiceSelecao=7},
+            new Jogadores {Id=27, Nome="Ben Youssef", Posicao="MD", Imagem="Ben_Youssef_MD.png",IndiceSelecao=7},
             new Jogadores {Id=28, Nome="Skhiri", Posicao="MDC", Imagem="Skhiri.png",IndiceSelecao=7},
             new Jogadores {Id=29, Nome="Maâloul", Posicao="DE", Imagem="Maaloul.png",IndiceSelecao=7},
             new Jogadores {Id=30, Nome="Meriah", Posicao="DC", Imagem="Meriah.png",IndiceSelecao=7},
-            new Jogadores {Id=31, Nome="Ben Youssef", Posicao="DC", Imagem="Ben Youssef_DC.png", IndiceSelecao=7},
+            new Jogadores {Id=31, Nome="Ben Youssef", Posicao="DC", Imagem="Ben_Youssef_DC.png", IndiceSelecao=7},
             new Jogadores {Id=32, Nome="Bronn", Posicao="DCD", Imagem="Bronn.png", IndiceSelecao=7},
             new Jogadores {Id=33, Nome="Mustapha", Posicao="GR", Imagem="Mustapha.png",IndiceSelecao=7},
 

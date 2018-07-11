@@ -51,9 +51,5 @@
         ecraGrupos();
     }
 
-    //function init() {
-    //    ecraGrupos();
-    //}
-    
     init();
 });
