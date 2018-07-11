@@ -36,8 +36,10 @@
             selecoesList.style.display = "none";
             var jogadoresList = document.querySelector('#jogadores');
             jogadoresList.style.display = "none";
-            var focusImageItem = document.querySelector('#focusImageItem');
-            focusImageItem.style.display = "none";
+            var selecoesList = document.querySelector('#selecaoDetalhes');
+            selecoesList.style.display = "none";
+            var jogadoresList = document.querySelector('#jogadorDetalhes');
+            jogadoresList.style.display = "none";
             var gruposList = document.querySelector('#grupos');
             gruposList.style.display = "block";
             ecraGrupos();

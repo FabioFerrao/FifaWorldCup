@@ -1,12 +1,25 @@
 ﻿function mostraGrupos(grupos) {
+
+    //associacao dos divs a uma variavel para melhor utilização
+    var gruposList = document.querySelector('#grupos');
     var selecoesList = document.querySelector('#selecoes');
     var jogadoresList = document.querySelector('#jogadores');
-    var containerGrupos = document.querySelector('#grupos');
+    var jogadorDetalhesList = document.querySelector('#jogadorDetalhes');
     var selecaoDetalhesList = document.querySelector('#selecaoDetalhes');
-    containerGrupos.innerHTML = "";
+
+    //mostrar apenas o div correto
+    gruposList.style.display = "block";
+    selecoesList.style.display = "none";
+    jogadoresList.style.display = "none";
+    jogadorDetalhesList.style.display = "none";
+    selecaoDetalhesList.style.display = "none";
+
+    //limpar os restantes divs
+    jogadorDetalhesList.innerHTML = "";
     jogadoresList.innerHTML = "";
-    selecoesList.innerHTML = "";
     selecaoDetalhesList.innerHTML = "";
+    selecoesList.innerHTML = "";
+    gruposList.innerHTML = "";
 
 
     for (var i = 0; i < grupos.length; i++) {
@@ -15,7 +28,7 @@
         var divGrupo = document.createElement('div');
         divGrupo.setAttribute("id", "divGrupo")
         divGrupo.setAttribute("data-grupoid", grupo.Id);
-        containerGrupos.appendChild(divGrupo);
+        gruposList.appendChild(divGrupo);
         
         var nome = document.createElement('h1');
         nome.textContent = grupos[i].Nome;

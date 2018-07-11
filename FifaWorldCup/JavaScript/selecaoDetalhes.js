@@ -1,16 +1,22 @@
 ﻿function mostraSelecaoDetalhes(selecaoDetalhes) {
+
+    //associacao dos divs a uma variavel para melhor utilização
     var gruposList = document.querySelector('#grupos');
     var selecoesList = document.querySelector('#selecoes');
     var jogadoresList = document.querySelector('#jogadores');
+    var jogadorDetalhesList = document.querySelector('#jogadorDetalhes');
     var selecaoDetalhesList = document.querySelector('#selecaoDetalhes');
 
     //mostrar apenas o div correto
     gruposList.style.display = "none";
     selecoesList.style.display = "none";
     jogadoresList.style.display = "none";
+    jogadorDetalhesList.style.display = "none";
     selecaoDetalhesList.style.display = "block";
 
     //limpar os restantes divs
+
+    jogadorDetalhesList.innerHTML = "";
     jogadoresList.innerHTML = "";
     gruposList.innerHTML = "";
     selecoesList.innerHTML = "";
@@ -59,18 +65,29 @@
         for (var j = 0; j < selecDetalhes.listaDeJogadoresPorSelecao.length; j++) {
             var jogador = selecDetalhes.listaDeJogadoresPorSelecao[j];
 
+            var divJogador = document.createElement('div');
+            divJogador.setAttribute("id", "divJogador")
+            divJogador.setAttribute("data-jogadorid", jogador.Id);
+            selecaoDetalhesList.appendChild(divJogador);
+
             var nomeJogador = document.createElement('h1');
             nomeJogador.textContent = jogador.Nome;
-            selecaoDetalhesList.appendChild(nomeJogador);
+            divJogador.appendChild(nomeJogador);
 
             var imgJogador = document.createElement('img');
             imgJogador.setAttribute("style", "width:180px; height:180px;");
             imgJogador.src = "Imagens/Jogadores/" + jogador.Imagem;
-            selecaoDetalhesList.appendChild(imgJogador);
+            divJogador.appendChild(imgJogador);
 
             var posicaoJogador = document.createElement('p');
             posicaoJogador.textContent = jogador.Posicao;
-            selecaoDetalhesList.appendChild(posicaoJogador);
+            divJogador.appendChild(posicaoJogador);
+
+            //funcao para ir buscar as selecoes desse grupo
+            divJogador.onclick = function (e) {
+                var jogadorID = this.getAttribute('data-jogadorid');
+                ecraJogadorDetalhes(jogadorID);
+            };
 
         }
     }
