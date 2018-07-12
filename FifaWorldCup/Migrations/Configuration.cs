@@ -142,17 +142,17 @@ namespace FifaWorldCup.Migrations
             new Jogadores {Id=77, Nome="Beiranvand", Posicao="GR", Imagem="Beiranvand.png",IndiceSelecao=3},
 
             //Jogadores de Marrocos
-            new Jogadores {Id=67, Nome="Boutaib", Posicao="PL", Imagem="Boutaib.png",IndiceSelecao=4},
-            new Jogadores {Id=68, Nome="Ziyach", Posicao="ME", Imagem="Ziyach.png",IndiceSelecao=4},
-            new Jogadores {Id=69, Nome="Amrabat", Posicao="MD", Imagem="Amrabat.png",IndiceSelecao=4},
-            new Jogadores {Id=70, Nome="Belhanda", Posicao="MC", Imagem="Belhanda.png",IndiceSelecao=4},
-            new Jogadores {Id=71, Nome="Boussoufa", Posicao="MC", Imagem="Boussoufa.png",IndiceSelecao=4},
-            new Jogadores {Id=72, Nome="Ahmadi", Posicao="MDC", Imagem="Ahmadi.png",IndiceSelecao=4},
-            new Jogadores {Id=73, Nome="Hakimi", Posicao="DE", Imagem="Hakimi.png",IndiceSelecao=4},
-            new Jogadores {Id=74, Nome="Saiss", Posicao="DC", Imagem="Saiss.png",IndiceSelecao=4},
-            new Jogadores {Id=75, Nome="Benatia", Posicao="DC", Imagem="Benatia.png",IndiceSelecao=4},
-            new Jogadores {Id=76, Nome="Dirar", Posicao="DD", Imagem="Dirar.png",IndiceSelecao=4},
-            new Jogadores {Id=77, Nome="Kajoui", Posicao="GR", Imagem="Kajoui.png",IndiceSelecao=4},
+            new Jogadores {Id=78, Nome="Boutaib", Posicao="PL", Imagem="Boutaib.png",IndiceSelecao=4},
+            new Jogadores {Id=79, Nome="Ziyach", Posicao="ME", Imagem="Ziyach.png",IndiceSelecao=4},
+            new Jogadores {Id=80, Nome="Amrabat", Posicao="MD", Imagem="Amrabat.png",IndiceSelecao=4},
+            new Jogadores {Id=81, Nome="Belhanda", Posicao="MC", Imagem="Belhanda.png",IndiceSelecao=4},
+            new Jogadores {Id=82, Nome="Boussoufa", Posicao="MC", Imagem="Boussoufa.png",IndiceSelecao=4},
+            new Jogadores {Id=83, Nome="Ahmadi", Posicao="MDC", Imagem="Ahmadi.png",IndiceSelecao=4},
+            new Jogadores {Id=84, Nome="Hakimi", Posicao="DE", Imagem="Hakimi.png",IndiceSelecao=4},
+            new Jogadores {Id=85, Nome="Saiss", Posicao="DC", Imagem="Saiss.png",IndiceSelecao=4},
+            new Jogadores {Id=86, Nome="Benatia", Posicao="DC", Imagem="Benatia.png",IndiceSelecao=4},
+            new Jogadores {Id=87, Nome="Dirar", Posicao="DD", Imagem="Dirar.png",IndiceSelecao=4},
+            new Jogadores {Id=88, Nome="Kajoui", Posicao="GR", Imagem="Kajoui.png",IndiceSelecao=4},
 
             };
             jogadores.ForEach(aa => context.Jogadores.AddOrUpdate(a => a.Id, aa));
@@ -673,7 +673,312 @@ namespace FifaWorldCup.Migrations
 
 
 
+             //---------------------------  ESPANHA  --------------------------------
+            
+            //COSTA
+            new EstatisticaJ {Id=370, Nome="Cabeceamento", Valor=95, IndiceJogador=56 },
+            new EstatisticaJ {Id=371, Nome="Pot. Remate", Valor=93, IndiceJogador=56 },
+            new EstatisticaJ {Id=372, Nome="Finalização", Valor=94, IndiceJogador=56 },
+            new EstatisticaJ {Id=373, Nome="Rem. Longe", Valor=90, IndiceJogador=56 },
+            new EstatisticaJ {Id=374, Nome="Efeito", Valor=84, IndiceJogador=56 },
+            new EstatisticaJ {Id=375, Nome="Prec. Livres", Valor=79, IndiceJogador=56 },
+            new EstatisticaJ {Id=376, Nome="Penaltis", Valor=86, IndiceJogador=56 },
+            new EstatisticaJ {Id=377, Nome="Remates de 1ª", Valor=77, IndiceJogador=56 },
+                             
+            //ISCO            
+            new EstatisticaJ {Id=378, Nome="Aceleração", Valor=77, IndiceJogador=57 },
+            new EstatisticaJ {Id=379, Nome="Resistência", Valor=86, IndiceJogador=57 },
+            new EstatisticaJ {Id=380, Nome="Força", Valor=79, IndiceJogador=57 },
+            new EstatisticaJ {Id=381, Nome="Equilibrio", Valor=72, IndiceJogador=57 },
+            new EstatisticaJ {Id=382, Nome="Sprint", Valor=85, IndiceJogador=57 },
+            new EstatisticaJ {Id=383, Nome="Agilidade", Valor=83, IndiceJogador=57 },
+            new EstatisticaJ {Id=384, Nome="Salto", Valor=84, IndiceJogador=57 },
+                              
+            //D SILVA
+            new EstatisticaJ {Id=385, Nome="Agressividade", Valor=66, IndiceJogador=58 },
+            new EstatisticaJ {Id=386, Nome="Reflexos", Valor=84, IndiceJogador=58 },
+            new EstatisticaJ {Id=387, Nome="Pos. Ataque", Valor=82, IndiceJogador=58 },
+            new EstatisticaJ {Id=388, Nome="Interceções", Valor=77, IndiceJogador=58 },
+            new EstatisticaJ {Id=389, Nome="Visão", Valor=85, IndiceJogador=58 },
+            new EstatisticaJ {Id=390, Nome="Compostura", Valor=85, IndiceJogador=58 },
+                              
+            //INIESTA
+            new EstatisticaJ {Id=391, Nome="Aceleração", Valor=64, IndiceJogador=59 },
+            new EstatisticaJ {Id=392, Nome="Resistência", Valor=89, IndiceJogador=59 },
+            new EstatisticaJ {Id=393, Nome="Força", Valor=62, IndiceJogador=59},
+            new EstatisticaJ {Id=394, Nome="Equilibrio", Valor=67, IndiceJogador=59 },
+            new EstatisticaJ {Id=395, Nome="Sprint", Valor=65, IndiceJogador=59 },
+            new EstatisticaJ {Id=396, Nome="Agilidade", Valor=73, IndiceJogador=59 },
+            new EstatisticaJ {Id=397, Nome="Salto", Valor=56, IndiceJogador=59 },
+            
+            //THIAGO
+            new EstatisticaJ {Id=398, Nome="Aceleração", Valor=85, IndiceJogador=60 },
+            new EstatisticaJ {Id=399, Nome="Resistência", Valor=69, IndiceJogador=60 },
+            new EstatisticaJ {Id=400, Nome="Força", Valor=54, IndiceJogador=60 },
+            new EstatisticaJ {Id=401, Nome="Equilibrio", Valor=84, IndiceJogador=60 },
+            new EstatisticaJ {Id=402, Nome="Sprint", Valor=82, IndiceJogador=60 },
+            new EstatisticaJ {Id=403, Nome="Agilidade", Valor=91, IndiceJogador=60 },
+            new EstatisticaJ {Id=404, Nome="Salto", Valor=63, IndiceJogador=60 },
 
+            //BUSQUETS
+            new EstatisticaJ {Id=405, Nome="Aceleração", Valor=52, IndiceJogador=61 },
+            new EstatisticaJ {Id=406, Nome="Resistência", Valor=84, IndiceJogador=61 },
+            new EstatisticaJ {Id=407, Nome="Força", Valor=88, IndiceJogador=61 },
+            new EstatisticaJ {Id=408, Nome="Equilibrio", Valor=50, IndiceJogador=61 },
+            new EstatisticaJ {Id=409, Nome="Sprint", Valor=53, IndiceJogador=61 },
+            new EstatisticaJ {Id=410, Nome="Agilidade", Valor=45, IndiceJogador=61 },
+            new EstatisticaJ {Id=411, Nome="Salto", Valor=68, IndiceJogador=61 },
+            
+             //J ALBA
+            new EstatisticaJ {Id=412, Nome="Aceleração", Valor=84, IndiceJogador=62 },
+            new EstatisticaJ {Id=413, Nome="Resistência", Valor=83, IndiceJogador=62 },
+            new EstatisticaJ {Id=414, Nome="Força", Valor=54, IndiceJogador=62 },
+            new EstatisticaJ {Id=415, Nome="Equilibrio", Valor=86, IndiceJogador=62 },
+            new EstatisticaJ {Id=416, Nome="Sprint", Valor=74, IndiceJogador=62 },
+            new EstatisticaJ {Id=417, Nome="Agilidade", Valor=88, IndiceJogador=62 },
+            new EstatisticaJ {Id=418, Nome="Salto", Valor=66, IndiceJogador=62 },
+           
+             //S RAMOS
+            new EstatisticaJ {Id=419, Nome="Aceleração", Valor=53, IndiceJogador=63 },
+            new EstatisticaJ {Id=420, Nome="Resistência", Valor=76, IndiceJogador=63 },
+            new EstatisticaJ {Id=421, Nome="Força", Valor=82, IndiceJogador=63 },
+            new EstatisticaJ {Id=422, Nome="Equilibrio", Valor=54, IndiceJogador=63 },
+            new EstatisticaJ {Id=423, Nome="Sprint", Valor=59, IndiceJogador=63 },
+            new EstatisticaJ {Id=424, Nome="Agilidade", Valor=58, IndiceJogador=63 },
+            new EstatisticaJ {Id=425, Nome="Salto", Valor=78, IndiceJogador=63 },
+
+             //PIQUE
+            new EstatisticaJ {Id=426, Nome="Aceleração", Valor=68, IndiceJogador=64 },
+            new EstatisticaJ {Id=427, Nome="Resistência", Valor=81, IndiceJogador=64 },
+            new EstatisticaJ {Id=428, Nome="Força", Valor=84, IndiceJogador=64 },
+            new EstatisticaJ {Id=429, Nome="Equilibrio", Valor=50, IndiceJogador=64 },
+            new EstatisticaJ {Id=430, Nome="Sprint", Valor=75, IndiceJogador=64 },
+            new EstatisticaJ {Id=431, Nome="Agilidade", Valor=64, IndiceJogador=64 },
+            new EstatisticaJ {Id=432, Nome="Salto", Valor=78, IndiceJogador=64 },
+
+             //CARVAJAL
+            new EstatisticaJ {Id=433, Nome="Aceleração", Valor=86, IndiceJogador=65 },
+            new EstatisticaJ {Id=434, Nome="Resistência", Valor=88, IndiceJogador=65 },
+            new EstatisticaJ {Id=435, Nome="Força", Valor=63, IndiceJogador=65 },
+            new EstatisticaJ {Id=436, Nome="Equilibrio", Valor=83, IndiceJogador=65 },
+            new EstatisticaJ {Id=437, Nome="Sprint", Valor=83, IndiceJogador=65 },
+            new EstatisticaJ {Id=438, Nome="Agilidade", Valor=76, IndiceJogador=65 },
+            new EstatisticaJ {Id=439, Nome="Salto", Valor=73, IndiceJogador=65 },
+
+             //DE GEA
+            new EstatisticaJ {Id=440, Nome="Posic.", Valor=79, IndiceJogador=66 },
+            new EstatisticaJ {Id=441, Nome="Mergulho GR", Valor=85, IndiceJogador=66 },
+            new EstatisticaJ {Id=442, Nome="Jogo Mãos GR", Valor=82, IndiceJogador=66 },
+            new EstatisticaJ {Id=443, Nome="Jogo Pés GR", Valor=85, IndiceJogador=66 },
+            new EstatisticaJ {Id=444, Nome="Reflexos GR", Valor=83, IndiceJogador=66 },
+
+
+
+
+
+             //---------------------------  IRAO  --------------------------------
+            
+            //AZMOUN
+            new EstatisticaJ {Id=445, Nome="Cabeceamento", Valor=95, IndiceJogador=67 },
+            new EstatisticaJ {Id=446, Nome="Pot. Remate", Valor=93, IndiceJogador=67 },
+            new EstatisticaJ {Id=447, Nome="Finalização", Valor=94, IndiceJogador=67 },
+            new EstatisticaJ {Id=448, Nome="Rem. Longe", Valor=90, IndiceJogador=67 },
+            new EstatisticaJ {Id=449, Nome="Efeito", Valor=84, IndiceJogador=67 },
+            new EstatisticaJ {Id=450, Nome="Prec. Livres", Valor=79, IndiceJogador=67 },
+            new EstatisticaJ {Id=451, Nome="Penaltis", Valor=86, IndiceJogador=67 },
+            new EstatisticaJ {Id=452,  Nome="Remates de 1ª", Valor=77, IndiceJogador=67 },
+                             
+            //TAREMI            
+            new EstatisticaJ {Id=453, Nome="Aceleração", Valor=77, IndiceJogador=68 },
+            new EstatisticaJ {Id=454, Nome="Resistência", Valor=86, IndiceJogador=68 },
+            new EstatisticaJ {Id=455, Nome="Força", Valor=79, IndiceJogador=68 },
+            new EstatisticaJ {Id=456, Nome="Equilibrio", Valor=72, IndiceJogador=68 },
+            new EstatisticaJ {Id=457, Nome="Sprint", Valor=85, IndiceJogador=68 },
+            new EstatisticaJ {Id=458, Nome="Agilidade", Valor=83, IndiceJogador=68 },
+            new EstatisticaJ {Id=459, Nome="Salto", Valor=84, IndiceJogador=68 },
+                              
+            //AMIHI
+            new EstatisticaJ {Id=460, Nome="Agressividade", Valor=66, IndiceJogador=69 },
+            new EstatisticaJ {Id=461, Nome="Reflexos", Valor=84, IndiceJogador=69},
+            new EstatisticaJ {Id=462, Nome="Pos. Ataque", Valor=82, IndiceJogador=69 },
+            new EstatisticaJ {Id=463, Nome="Interceções", Valor=77, IndiceJogador=69 },
+            new EstatisticaJ {Id=464, Nome="Visão", Valor=85, IndiceJogador=69 },
+            new EstatisticaJ {Id=465, Nome="Compostura", Valor=85, IndiceJogador=69 },
+                              
+            //EBRAHIMI
+            new EstatisticaJ {Id=466, Nome="Aceleração", Valor=64, IndiceJogador=70 },
+            new EstatisticaJ {Id=467, Nome="Resistência", Valor=89, IndiceJogador=70 },
+            new EstatisticaJ {Id=468, Nome="Força", Valor=62, IndiceJogador=70},
+            new EstatisticaJ {Id=469, Nome="Equilibrio", Valor=67, IndiceJogador=70 },
+            new EstatisticaJ {Id=470, Nome="Sprint", Valor=65, IndiceJogador=70 },
+            new EstatisticaJ {Id=471, Nome="Agilidade", Valor=73, IndiceJogador=70 },
+            new EstatisticaJ {Id=472, Nome="Salto", Valor=56, IndiceJogador=70 },
+            
+            //JAHANBAKHSH
+            new EstatisticaJ {Id=473, Nome="Aceleração", Valor=85, IndiceJogador=71 },
+            new EstatisticaJ {Id=474, Nome="Resistência", Valor=69, IndiceJogador=71 },
+            new EstatisticaJ {Id=475, Nome="Força", Valor=54, IndiceJogador=71},
+            new EstatisticaJ {Id=476, Nome="Equilibrio", Valor=84, IndiceJogador=71 },
+            new EstatisticaJ {Id=477, Nome="Sprint", Valor=82, IndiceJogador=71 },
+            new EstatisticaJ {Id=478, Nome="Agilidade", Valor=91, IndiceJogador=71 },
+            new EstatisticaJ {Id=479, Nome="Salto", Valor=63, IndiceJogador=71 },
+
+            //EZATOLAHI
+            new EstatisticaJ {Id=480, Nome="Aceleração", Valor=52, IndiceJogador=72 },
+            new EstatisticaJ {Id=481, Nome="Resistência", Valor=84, IndiceJogador=72 },
+            new EstatisticaJ {Id=482, Nome="Força", Valor=88, IndiceJogador=72 },
+            new EstatisticaJ {Id=483, Nome="Equilibrio", Valor=50, IndiceJogador=72 },
+            new EstatisticaJ {Id=484, Nome="Sprint", Valor=53, IndiceJogador=72 },
+            new EstatisticaJ {Id=485, Nome="Agilidade", Valor=45, IndiceJogador=72 },
+            new EstatisticaJ {Id=486, Nome="Salto", Valor=68, IndiceJogador=72 },
+            
+             //SAFI
+            new EstatisticaJ {Id=487, Nome="Aceleração", Valor=84, IndiceJogador=73 },
+            new EstatisticaJ {Id=488, Nome="Resistência", Valor=83, IndiceJogador=73 },
+            new EstatisticaJ {Id=489, Nome="Força", Valor=54, IndiceJogador=73 },
+            new EstatisticaJ {Id=490, Nome="Equilibrio", Valor=86, IndiceJogador=73 },
+            new EstatisticaJ {Id=491, Nome="Sprint", Valor=74, IndiceJogador=73 },
+            new EstatisticaJ {Id=492, Nome="Agilidade", Valor=88, IndiceJogador=73 },
+            new EstatisticaJ {Id=493, Nome="Salto", Valor=66, IndiceJogador=73 },
+           
+             //HOSSEINI
+            new EstatisticaJ {Id=494, Nome="Aceleração", Valor=53, IndiceJogador=74 },
+            new EstatisticaJ {Id=495, Nome="Resistência", Valor=76, IndiceJogador=74 },
+            new EstatisticaJ {Id=496, Nome="Força", Valor=82, IndiceJogador=74 },
+            new EstatisticaJ {Id=497, Nome="Equilibrio", Valor=54, IndiceJogador=74 },
+            new EstatisticaJ {Id=498, Nome="Sprint", Valor=59, IndiceJogador=74 },
+            new EstatisticaJ {Id=499, Nome="Agilidade", Valor=58, IndiceJogador=74 },
+            new EstatisticaJ {Id=500, Nome="Salto", Valor=78, IndiceJogador=74 },
+
+             //POURALIGANJI
+            new EstatisticaJ {Id=501, Nome="Aceleração", Valor=68, IndiceJogador=75 },
+            new EstatisticaJ {Id=502, Nome="Resistência", Valor=81, IndiceJogador=75 },
+            new EstatisticaJ {Id=503, Nome="Força", Valor=84, IndiceJogador=75 },
+            new EstatisticaJ {Id=504, Nome="Equilibrio", Valor=50, IndiceJogador=75 },
+            new EstatisticaJ {Id=505, Nome="Sprint", Valor=75, IndiceJogador=75 },
+            new EstatisticaJ {Id=506, Nome="Agilidade", Valor=64, IndiceJogador=75 },
+            new EstatisticaJ {Id=507, Nome="Salto", Valor=78, IndiceJogador=75 },
+
+             //REZAEIAN
+            new EstatisticaJ {Id=508, Nome="Aceleração", Valor=86, IndiceJogador=76 },
+            new EstatisticaJ {Id=509, Nome="Resistência", Valor=88, IndiceJogador=76 },
+            new EstatisticaJ {Id=510, Nome="Força", Valor=63, IndiceJogador=76 },
+            new EstatisticaJ {Id=511, Nome="Equilibrio", Valor=83, IndiceJogador=76 },
+            new EstatisticaJ {Id=512, Nome="Sprint", Valor=83, IndiceJogador=76 },
+            new EstatisticaJ {Id=513, Nome="Agilidade", Valor=76, IndiceJogador=76 },
+            new EstatisticaJ {Id=514, Nome="Salto", Valor=73, IndiceJogador=76 },
+
+             //BEIRANVAND
+            new EstatisticaJ {Id=515, Nome="Posic.", Valor=79, IndiceJogador=77 },
+            new EstatisticaJ {Id=516, Nome="Mergulho GR", Valor=85, IndiceJogador=77 },
+            new EstatisticaJ {Id=517, Nome="Jogo Mãos GR", Valor=82, IndiceJogador=77 },
+            new EstatisticaJ {Id=518, Nome="Jogo Pés GR", Valor=85, IndiceJogador=77 },
+            new EstatisticaJ {Id=519, Nome="Reflexos GR", Valor=83, IndiceJogador=77 },
+
+
+
+
+
+
+
+             //---------------------------  Marrocos  --------------------------------
+            
+            //Boutaib
+            new EstatisticaJ {Id=520, Nome="Cabeceamento", Valor=95, IndiceJogador=78 },
+            new EstatisticaJ {Id=521, Nome="Pot. Remate", Valor=93, IndiceJogador=78 },
+            new EstatisticaJ {Id=522, Nome="Finalização", Valor=94, IndiceJogador=78 },
+            new EstatisticaJ {Id=523, Nome="Rem. Longe", Valor=90, IndiceJogador=78},
+            new EstatisticaJ {Id=524, Nome="Efeito", Valor=84, IndiceJogador=78 },
+            new EstatisticaJ {Id=525, Nome="Prec. Livres", Valor=79, IndiceJogador=78 },
+            new EstatisticaJ {Id=526, Nome="Penaltis", Valor=86, IndiceJogador=78 },
+            new EstatisticaJ {Id=527,  Nome="Remates de 1ª", Valor=77, IndiceJogador=78 },
+                             
+            //Ziyach            
+            new EstatisticaJ {Id=528, Nome="Aceleração", Valor=77, IndiceJogador=79 },
+            new EstatisticaJ {Id=529, Nome="Resistência", Valor=86, IndiceJogador=79 },
+            new EstatisticaJ {Id=530, Nome="Força", Valor=79, IndiceJogador=79 },
+            new EstatisticaJ {Id=531, Nome="Equilibrio", Valor=72, IndiceJogador=79 },
+            new EstatisticaJ {Id=532, Nome="Sprint", Valor=85, IndiceJogador=79 },
+            new EstatisticaJ {Id=533, Nome="Agilidade", Valor=83, IndiceJogador=79 },
+            new EstatisticaJ {Id=534, Nome="Salto", Valor=84, IndiceJogador=79 },
+                              
+            //Amrabat
+            new EstatisticaJ {Id=535, Nome="Agressividade", Valor=66, IndiceJogador=80 },
+            new EstatisticaJ {Id=536, Nome="Reflexos", Valor=84, IndiceJogador=80},
+            new EstatisticaJ {Id=537, Nome="Pos. Ataque", Valor=82, IndiceJogador=80 },
+            new EstatisticaJ {Id=538, Nome="Interceções", Valor=77, IndiceJogador=80 },
+            new EstatisticaJ {Id=539, Nome="Visão", Valor=85, IndiceJogador=80 },
+            new EstatisticaJ {Id=540, Nome="Compostura", Valor=85, IndiceJogador=80 },
+                             
+            //Belhanda
+            new EstatisticaJ {Id=541, Nome="Aceleração", Valor=64, IndiceJogador=81 },
+            new EstatisticaJ {Id=542, Nome="Resistência", Valor=89, IndiceJogador=81 },
+            new EstatisticaJ {Id=543, Nome="Força", Valor=62, IndiceJogador=81},
+            new EstatisticaJ {Id=544, Nome="Equilibrio", Valor=67, IndiceJogador=81 },
+            new EstatisticaJ {Id=545, Nome="Sprint", Valor=65, IndiceJogador=81 },
+            new EstatisticaJ {Id=546, Nome="Agilidade", Valor=73, IndiceJogador=81 },
+            new EstatisticaJ {Id=547, Nome="Salto", Valor=56, IndiceJogador=81 },
+            
+            //Boussoufa
+            new EstatisticaJ {Id=548, Nome="Aceleração", Valor=85, IndiceJogador=82 },
+            new EstatisticaJ {Id=549, Nome="Resistência", Valor=69, IndiceJogador=82 },
+            new EstatisticaJ {Id=550, Nome="Força", Valor=54, IndiceJogador=82},
+            new EstatisticaJ {Id=551, Nome="Equilibrio", Valor=84, IndiceJogador=82 },
+            new EstatisticaJ {Id=552, Nome="Sprint", Valor=82, IndiceJogador=82 },
+            new EstatisticaJ {Id=553, Nome="Agilidade", Valor=91, IndiceJogador=82 },
+            new EstatisticaJ {Id=554, Nome="Salto", Valor=63, IndiceJogador=82 },
+
+            //Ahmadi
+            new EstatisticaJ {Id=555, Nome="Aceleração", Valor=52, IndiceJogador=83 },
+            new EstatisticaJ {Id=556, Nome="Resistência", Valor=84, IndiceJogador=83 },
+            new EstatisticaJ {Id=557, Nome="Força", Valor=88, IndiceJogador=83},
+            new EstatisticaJ {Id=558, Nome="Equilibrio", Valor=50, IndiceJogador=83 },
+            new EstatisticaJ {Id=559, Nome="Sprint", Valor=53, IndiceJogador=83 },
+            new EstatisticaJ {Id=560, Nome="Agilidade", Valor=45, IndiceJogador=83 },
+            new EstatisticaJ {Id=561, Nome="Salto", Valor=68, IndiceJogador=83 },
+            
+             //Hakimi
+            new EstatisticaJ {Id=562, Nome="Aceleração", Valor=84, IndiceJogador=84},
+            new EstatisticaJ {Id=563, Nome="Resistência", Valor=83, IndiceJogador=84 },
+            new EstatisticaJ {Id=564, Nome="Força", Valor=54, IndiceJogador=84 },
+            new EstatisticaJ {Id=565, Nome="Equilibrio", Valor=86, IndiceJogador=84 },
+            new EstatisticaJ {Id=566, Nome="Sprint", Valor=74, IndiceJogador=84 },
+            new EstatisticaJ {Id=567, Nome="Agilidade", Valor=88, IndiceJogador=84 },
+            new EstatisticaJ {Id=568, Nome="Salto", Valor=66, IndiceJogador=84 },
+           
+             //Saiss
+            new EstatisticaJ {Id=569, Nome="Aceleração", Valor=53, IndiceJogador=85 },
+            new EstatisticaJ {Id=570, Nome="Resistência", Valor=76, IndiceJogador=85 },
+            new EstatisticaJ {Id=571, Nome="Força", Valor=82, IndiceJogador=85},
+            new EstatisticaJ {Id=572, Nome="Equilibrio", Valor=54, IndiceJogador=85 },
+            new EstatisticaJ {Id=573, Nome="Sprint", Valor=59, IndiceJogador=85 },
+            new EstatisticaJ {Id=574, Nome="Agilidade", Valor=58, IndiceJogador=85 },
+            new EstatisticaJ {Id=575, Nome="Salto", Valor=78, IndiceJogador=85 },
+
+             //Benatia
+            new EstatisticaJ {Id=576, Nome="Aceleração", Valor=68, IndiceJogador=86 },
+            new EstatisticaJ {Id=577, Nome="Resistência", Valor=81, IndiceJogador=86 },
+            new EstatisticaJ {Id=578, Nome="Força", Valor=84, IndiceJogador=86},
+            new EstatisticaJ {Id=579, Nome="Equilibrio", Valor=50, IndiceJogador=86 },
+            new EstatisticaJ {Id=580, Nome="Sprint", Valor=75, IndiceJogador=86 },
+            new EstatisticaJ {Id=581, Nome="Agilidade", Valor=64, IndiceJogador=86 },
+            new EstatisticaJ {Id=582, Nome="Salto", Valor=78, IndiceJogador=86 },
+
+             //Dirar
+            new EstatisticaJ {Id=583, Nome="Aceleração", Valor=86, IndiceJogador=87 },
+            new EstatisticaJ {Id=584, Nome="Resistência", Valor=88, IndiceJogador=87 },
+            new EstatisticaJ {Id=585, Nome="Força", Valor=63, IndiceJogador=87 },
+            new EstatisticaJ {Id=586, Nome="Equilibrio", Valor=83, IndiceJogador=87 },
+            new EstatisticaJ {Id=587, Nome="Sprint", Valor=83, IndiceJogador=87 },
+            new EstatisticaJ {Id=588, Nome="Agilidade", Valor=76, IndiceJogador=87 },
+            new EstatisticaJ {Id=589, Nome="Salto", Valor=73, IndiceJogador=87 },
+
+             //Kajoui
+            new EstatisticaJ {Id=590, Nome="Posic.", Valor=79, IndiceJogador=88 },
+            new EstatisticaJ {Id=591, Nome="Mergulho GR", Valor=85, IndiceJogador=88 },
+            new EstatisticaJ {Id=592, Nome="Jogo Mãos GR", Valor=82, IndiceJogador=88 },
+            new EstatisticaJ {Id=593, Nome="Jogo Pés GR", Valor=85, IndiceJogador=88},
+            new EstatisticaJ {Id=594, Nome="Reflexos GR", Valor=83, IndiceJogador=88 },
 
 
             };
