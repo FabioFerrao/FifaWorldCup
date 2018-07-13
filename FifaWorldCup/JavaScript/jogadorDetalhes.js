@@ -19,17 +19,20 @@
     gruposList.innerHTML = "";
     selecoesList.innerHTML = "";
 
+    var jogDetalhes = jogador[0];
+
+
     var nomeJogador = document.createElement('h1');
-    nomeJogador.textContent = jogador[0].Nome;
+    nomeJogador.textContent = jogDetalhes.Nome;
     jogadorDetalhesList.appendChild(nomeJogador);
 
     var imagemJogador = document.createElement('img');
-    imagemJogador.src = "Imagens/Jogadores/" + jogador[0].Imagem;
+    imagemJogador.src = "Imagens/Jogadores/" + jogDetalhes.Imagem;
     jogadorDetalhesList.appendChild(imagemJogador);
 
 
-    for (var i = 0; i < jogador[0].listaDeEstatisticaPorJogador.length; i++) {
-        var jogadorEstatistica = jogador[0].listaDeEstatisticaPorJogador[i];
+    for (var i = 0; i < jogDetalhes.listaDeEstatisticaPorJogador.length; i++) {
+        var jogadorEstatistica = jogDetalhes.listaDeEstatisticaPorJogador[i];
     
 
         var nomeEstatistica = document.createElement('h3');

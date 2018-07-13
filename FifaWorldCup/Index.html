@@ -3,19 +3,43 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Imagens/Logo.png" rel="icon" />
 </head>
 <body>
-    <div id="topBar">
-    </div>
+    <!-- Image and text -->
+    <nav id="navbarTop" class="navbar navbar-dark bg-dark sticky-top">
+        <a id="topBar" class="navbar-brand">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="Imagens/Logo.png" width="60" height="60" class="d-inline-block align-top">
+                </div>
+                <div class="col-md-3" style="margin-left:15px; align-content:center; display:flex; align-items:center;">
+                    <h2 style="color:white">Fifa World Cup</h2>
+                </div>
+
+            </div>
+        </a>
+    </nav>
+
     <div id="grupos">
     </div>
-    <div id="selecoes">
+    <div class="container">
+        <div id="selecoes">
+        </div>
     </div>
     <div id="selecaoDetalhes">
     </div>
     <div id="jogadores">
     </div>
     <div id="jogadorDetalhes">
+    </div>
+    <div class="divFooter footer position-sticky py-3 fixed-bottom ">
+        <h3>Tecnologias de Internet II </h3>
+        <h5>Aluno:</h5>
+        <p>Fábio André, 19088</p>
+
     </div>
 
     <script src="JavaScript/jogador.js"></script>

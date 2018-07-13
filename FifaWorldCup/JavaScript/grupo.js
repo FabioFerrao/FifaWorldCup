@@ -14,28 +14,33 @@
     jogadorDetalhesList.style.display = "none";
     selecaoDetalhesList.style.display = "none";
 
-    //limpar os restantes divs
+    //limpar os divs
     jogadorDetalhesList.innerHTML = "";
     jogadoresList.innerHTML = "";
     selecaoDetalhesList.innerHTML = "";
     selecoesList.innerHTML = "";
     gruposList.innerHTML = "";
+    gruposList.style.display = "flex";
+    var divGrupo = document.createElement('div');
+    divGrupo.className = "divConteudo row text-center";
+    divGrupo.setAttribute("style", "justify-content:center;background-image:Imagens/Background.png;");
 
-
+    gruposList.appendChild(divGrupo);
     for (var i = 0; i < grupos.length; i++) {
         var grupo = grupos[i];
-    
-        var divGrupo = document.createElement('div');
-        divGrupo.setAttribute("id", "divGrupo")
-        divGrupo.setAttribute("data-grupoid", grupo.Id);
-        gruposList.appendChild(divGrupo);
+        var divPorGrupo = document.createElement('div');
+        divPorGrupo.setAttribute("id", "divPorGrupo");
+        divPorGrupo.setAttribute("data-grupoid", grupo.Id);
+        divPorGrupo.className = "rounded col-md-2";
+
+        divGrupo.appendChild(divPorGrupo);
         
         var nome = document.createElement('h1');
         nome.textContent = grupos[i].Nome;
-        divGrupo.appendChild(nome);
+        divPorGrupo.appendChild(nome);
             
          //funcao para ir buscar as selecoes desse grupo
-        divGrupo.onclick = function (e) {
+        divPorGrupo.onclick = function (e) {
             var groupID = this.getAttribute('data-grupoid');
             ecraSelecoes(groupID);
         };

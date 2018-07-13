@@ -1,22 +1,33 @@
 ﻿function mostraSelecoes(selecoes) {
+
     var gruposList = document.querySelector('#grupos');
     var selecoesList = document.querySelector('#selecoes');
     var jogadoresList = document.querySelector('#jogadores');
     var selecaoDetalhesList = document.querySelector('#selecaoDetalhes');
+
     gruposList.style.display = "none";
     jogadoresList.style.display = "none";
     selecaoDetalhesList.style.display = "none";
     selecoesList.style.display = "block";
+
     jogadoresList.innerHTML = "";
     gruposList.innerHTML = "";
     selecaoDetalhesList.innerHTML = "";
 
+
+
+    selecoesList.className = "row";
+    selecoesList.style.display = "flex";
+
+    selecoesList.style.marginLeft = "15%";
+    selecoesList.style.marginRight = "15%";
     for (var i = 0; i < selecoes.length; i++) {
 
         var selecao = selecoes[i];
 
         var divSelecao = document.createElement('div');
         divSelecao.setAttribute("id", "divSelecao")
+        divSelecao.className = "col-md-6 col-sm-6 text-center";
         divSelecao.setAttribute("data-selecaoid", selecao.Id);
         selecoesList.appendChild(divSelecao);
 
@@ -32,6 +43,10 @@
         divSelecao.appendChild(nome);
         
         var emblema = document.createElement('img');
+        //emblema.style.width = "100%";
+        //emblema.style.height = "100%";
+        emblema.style.position = "center";
+        emblema.style.marginBottom = "30px";
         emblema.src = "Imagens/Selecoes/" + selecao.Emblema;
         divSelecao.appendChild(emblema);
         

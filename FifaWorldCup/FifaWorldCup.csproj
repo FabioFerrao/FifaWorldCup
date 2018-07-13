@@ -125,6 +125,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="Imagens\Background.png" />
     <Content Include="Imagens\Jogadores\Adrien.png" />
     <Content Include="Imagens\Jogadores\Ahmadi.png" />
     <Content Include="Imagens\Jogadores\Alderweireld.png" />

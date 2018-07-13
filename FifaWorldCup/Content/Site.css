@@ -1,18 +1,58 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+   
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    body .divConteudo {
+        background-color: #13396e !important;
+    }
+
+.divConteudo {
+    background: url("/Imagens/Background.png") 50% 0 no-repeat fixed;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    background-size:100%;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+#selecaoDetalhes {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }
 
+#divPorGrupo {
+    background-color: #abc3cf !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    border: 1px solid;
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 250px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#divPorGrupo h1 {
+    vertical-align: middle !important;
+    position:absolute;
+    top:50%;
+    padding-left:15%;   /* por completar pls fix */
+    transform:translateY(-50%);
+}
+
+.divFooter {
+    background-color: #13396e !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    color: #ffffff;
+}
+
+.divSelecao {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+#navbarTop {
+    background-color: black !important;
+}
