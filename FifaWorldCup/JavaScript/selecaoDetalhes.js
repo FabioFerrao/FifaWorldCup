@@ -25,19 +25,25 @@
 
     selecaoDetalhesList.className = "row";
     selecaoDetalhesList.style.display = "flex";
-    
 
     var divSelecaoDados = document.createElement('div');
     selecaoDetalhesList.appendChild(divSelecaoDados);
     divSelecaoDados.className = "col-md-4 col-sm-4";
+
+    var divSelecaoBasic = document.createElement('div');
+
+    divSelecaoBasic.style.justifyContent = "center";
+    divSelecaoBasic.style.textAlign = "center";
+    divSelecaoBasic.style.paddingRight = "70px";
+    divSelecaoDados.appendChild(divSelecaoBasic);
+
     var nome = document.createElement('h1');
     nome.textContent = selecDetalhes.Nome;
-    divSelecaoDados.appendChild(nome);
+    divSelecaoBasic.appendChild(nome);
 
     var emblema = document.createElement('img');
     emblema.src = "Imagens/Selecoes/" + selecDetalhes.Emblema;
-    divSelecaoDados.appendChild(emblema);
-
+    divSelecaoBasic.appendChild(emblema);
 
     var divEstatisticas = document.createElement('div');
     divEstatisticas.className = "row";
@@ -47,8 +53,11 @@
     divEstatisticas.style.marginLeft = "2%";
     divEstatisticas.style.marginRight = "15%";
     divEstatisticas.style.marginTop = "40px";
+    divEstatisticas.style.justifyContent = "center";
+    divEstatisticas.style.textAlign = "center";
 
     divSelecaoDados.appendChild(divEstatisticas);
+
     //Estatisticas da Selecao
     for (var k = 0; k < selecDetalhes.listaDeEstatisticaPorSelecao.length; k++) {
         var estatisticaSelecao = selecDetalhes.listaDeEstatisticaPorSelecao[k];
@@ -66,18 +75,20 @@
 
         var valorEstatistica = document.createElement('p');
         valorEstatistica.textContent = estatisticaSelecao.Valor;
+
+        valorEstatistica.style.fontWeight = "bold";
         divPorEstatistica.appendChild(valorEstatistica);
     }
-
 
     var divEquipamentos = document.createElement('div');
     divEquipamentos.className = "row";
     divEquipamentos.id = "divEquipamentos";
     divEquipamentos.style.display = "flex";
+    divEquipamentos.style.justifyContent = "center";
 
     divEquipamentos.style.marginLeft = "2%";
     divEquipamentos.style.marginRight = "15%";
-
+    
     divSelecaoDados.appendChild(divEquipamentos);
 
     //Equipamentos da Selecao
@@ -90,14 +101,12 @@
         divPorEquipamento.class = "divPorEquipamento";
 
         divEquipamentos.appendChild(divPorEquipamento);
-
-
+        
         var imagemEquipamento = document.createElement('img');
         imagemEquipamento.src = "Imagens/Selecoes/Equipamentos/" + equipamento.Imagem;
         divPorEquipamento.appendChild(imagemEquipamento);
         imagemEquipamento.setAttribute("style", "width:109px; height:125px;");
-
-
+        
         var nomeEquipamento = document.createElement('h3');
         nomeEquipamento.textContent = equipamento.Nome;
         divPorEquipamento.appendChild(nomeEquipamento);
@@ -108,9 +117,9 @@
     divSelecaoJogadores.className = "col-md-8 col-sm-8";
     selecaoDetalhesList.appendChild(divSelecaoJogadores);
 
-
     var divJogadores = document.createElement('div');
     divJogadores.className = "row";
+    divJogadores.style.justifyContent = "center";
     divSelecaoJogadores.appendChild(divJogadores);
 
     //Jogadores da Selecao
@@ -120,6 +129,7 @@
         var divJogador = document.createElement('div');
         divJogador.className = "col-md-3 col-sm-3";
         divJogador.setAttribute("id", "divJogador")
+        divJogador.style.textAlign = "center";
         divJogador.setAttribute("data-jogadorid", jogador.Id);
 
         divJogador.style.cursor = "pointer";
@@ -136,6 +146,7 @@
 
         var posicaoJogador = document.createElement('p');
         posicaoJogador.textContent = jogador.Posicao;
+        posicaoJogador.style.fontWeight = "bold";
         divJogador.appendChild(posicaoJogador);
 
         //funcao para ir buscar as selecoes desse grupo
@@ -143,11 +154,7 @@
             var jogadorID = this.getAttribute('data-jogadorid');
             ecraJogadorDetalhes(jogadorID);
         };
-
     }
-
-
-
 }
 
 function getSelecaoDetalhes(selecaoDetalhes) {

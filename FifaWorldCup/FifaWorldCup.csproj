@@ -123,9 +123,10 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Site.css" />
+    <Content Include="css\estilo.css" />
     <Content Include="Global.asax" />
     <Content Include="Imagens\Background.png" />
+    <Content Include="Imagens\BackgroundWhite.png" />
     <Content Include="Imagens\fifaLogo.png" />
     <Content Include="Imagens\Jogadores\Adrien.png" />
     <Content Include="Imagens\Jogadores\Ahmadi.png" />
@@ -253,7 +254,7 @@
     <Content Include="JavaScript\grupo.js" />
     <Content Include="JavaScript\init.js" />
     <Content Include="JavaScript\jogadorDetalhes.js" />
-    <Content Include="JavaScript\selecao.js" />
+    <Content Include="JavaScript\selecoes.js" />
     <Content Include="JavaScript\selecaoDetalhes.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />

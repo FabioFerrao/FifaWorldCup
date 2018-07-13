@@ -21,26 +21,26 @@
     selecoesList.innerHTML = "";
     gruposList.innerHTML = "";
     gruposList.style.display = "flex";
-    var divGrupo = document.createElement('div');
-    divGrupo.className = "divConteudo row text-center";
-    divGrupo.setAttribute("style", "justify-content:center;background-image:Imagens/Publico.png;");
+    var divConteudoGrupos = document.createElement('div');
+    divConteudoGrupos.className = "divConteudoGrupos row text-center";
+    divConteudoGrupos.setAttribute("style", "justify-content:center;");
 
-    gruposList.appendChild(divGrupo);
+    gruposList.appendChild(divConteudoGrupos);
     for (var i = 0; i < grupos.length; i++) {
         var grupo = grupos[i];
-        var divPorGrupo = document.createElement('div');
-        divPorGrupo.setAttribute("id", "divPorGrupo");
-        divPorGrupo.setAttribute("data-grupoid", grupo.Id);
-        divPorGrupo.className = "rounded col-md-2";
-        divPorGrupo.style.cursor = "pointer";
-        divGrupo.appendChild(divPorGrupo);
+        var divGrupo = document.createElement('div');
+        divGrupo.setAttribute("id", "divGrupo");
+        divGrupo.setAttribute("data-grupoid", grupo.Id);
+        divGrupo.className = "rounded col-md-2, col-sm-2";
+        divGrupo.style.cursor = "pointer";
+        divConteudoGrupos.appendChild(divGrupo);
         
         var nome = document.createElement('h1');
         nome.textContent = grupos[i].Nome;
-        divPorGrupo.appendChild(nome);
+        divGrupo.appendChild(nome);
             
          //funcao para ir buscar as selecoes desse grupo
-        divPorGrupo.onclick = function (e) {
+        divGrupo.onclick = function (e) {
             var groupID = this.getAttribute('data-grupoid');
             ecraSelecoes(groupID);
         };

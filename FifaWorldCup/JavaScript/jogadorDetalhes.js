@@ -25,17 +25,20 @@
 
     var jogDetalhes = jogador[0];
 
-    var divJogadorImg = document.createElement('div');
-    jogadorDetalhesList.appendChild(divJogadorImg);
-    divJogadorImg.className = "col-md-4 col-sm-4";
+    var divJogadorBasicInfo = document.createElement('div');
+    jogadorDetalhesList.appendChild(divJogadorBasicInfo);
+    divJogadorBasicInfo.className = "col-md-4 col-sm-4";
+
+    divJogadorBasicInfo.textAlign = "center";
 
     var nomeJogador = document.createElement('h1');
     nomeJogador.textContent = jogDetalhes.Nome;
-    divJogadorImg.appendChild(nomeJogador);
+    divJogadorBasicInfo.appendChild(nomeJogador);
 
     var imagemJogador = document.createElement('img');
     imagemJogador.src = "Imagens/Jogadores/" + jogDetalhes.Imagem;
-    divJogadorImg.appendChild(imagemJogador);
+    imagemJogador.setAttribute("style", "width:180px; height:180px;");
+    divJogadorBasicInfo.appendChild(imagemJogador);
 
     var divJogadorEstatisticas = document.createElement('div');
     jogadorDetalhesList.appendChild(divJogadorEstatisticas);
@@ -43,6 +46,8 @@
 
     var divEstatisticas = document.createElement('div');
     divEstatisticas.className = "row";
+    divEstatisticas.style.justifyContent = "center";
+    divEstatisticas.style.textAlign = "center";
     divJogadorEstatisticas.appendChild(divEstatisticas);
 
 
@@ -51,7 +56,7 @@
     for (var i = 0; i < jogDetalhes.listaDeEstatisticaPorJogador.length; i++) {
 
         var divJogadorEstatistica = document.createElement('div');
-        divJogadorEstatistica.className = "col-md-4 col-sm-4";
+        divJogadorEstatistica.className = "col-md-5 col-sm-5";
         divJogadorEstatistica.class = "divJogadorEstatistica";
         divEstatisticas.appendChild(divJogadorEstatistica);
 

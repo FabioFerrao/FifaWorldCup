@@ -51,7 +51,7 @@ namespace FifaWorldCup.Migrations
             var jogadores = new List<Jogadores> {
                 
             //Jogadores de Inglaterra
-            new Jogadores {Id=1, Nome="Harry Kane", Posicao="PLE", Imagem="HarryKane.png",IndiceSelecao=5},
+            new Jogadores {Id=1, Nome="H. Kane", Posicao="PLE", Imagem="HarryKane.png",IndiceSelecao=5},
             new Jogadores {Id=2, Nome="Sterling", Posicao="PLD", Imagem="Sterling.png",IndiceSelecao=5},
             new Jogadores {Id=3, Nome="Dele Ali", Posicao="MCE", Imagem="DeleAli.png",IndiceSelecao=5},
             new Jogadores {Id=4, Nome="Henderson", Posicao="MC", Imagem="Henderson.png", IndiceSelecao=5},
@@ -81,11 +81,11 @@ namespace FifaWorldCup.Migrations
             new Jogadores {Id=24, Nome="Badri", Posicao="ME", Imagem="Badri.png",IndiceSelecao=7},
             new Jogadores {Id=25, Nome="Khaoui", Posicao="MCE", Imagem="Khaoui.png",IndiceSelecao=7},
             new Jogadores {Id=26, Nome="Sassi", Posicao="MCD", Imagem="Sassi.png",IndiceSelecao=7},
-            new Jogadores {Id=27, Nome="Ben Youssef", Posicao="MD", Imagem="Ben_Youssef_MD.png",IndiceSelecao=7},
+            new Jogadores {Id=27, Nome="B. Youssef", Posicao="MD", Imagem="Ben_Youssef_MD.png",IndiceSelecao=7},
             new Jogadores {Id=28, Nome="Skhiri", Posicao="MDC", Imagem="Skhiri.png",IndiceSelecao=7},
             new Jogadores {Id=29, Nome="Maâloul", Posicao="DE", Imagem="Maaloul.png",IndiceSelecao=7},
             new Jogadores {Id=30, Nome="Meriah", Posicao="DC", Imagem="Meriah.png",IndiceSelecao=7},
-            new Jogadores {Id=31, Nome="Ben Youssef", Posicao="DC", Imagem="Ben_Youssef_DC.png", IndiceSelecao=7},
+            new Jogadores {Id=31, Nome="B. Youssef", Posicao="DC", Imagem="Ben_Youssef_DC.png", IndiceSelecao=7},
             new Jogadores {Id=32, Nome="Bronn", Posicao="DD", Imagem="Bronn.png", IndiceSelecao=7},
             new Jogadores {Id=33, Nome="Mustapha", Posicao="GR", Imagem="Mustapha.png",IndiceSelecao=7},
 
@@ -104,7 +104,7 @@ namespace FifaWorldCup.Migrations
 
             //Jogadores de Portugal
             new Jogadores {Id=45, Nome="C.Ronaldo", Posicao="PLE", Imagem="C_Ronaldo.png",IndiceSelecao=1},
-            new Jogadores {Id=46, Nome="A.Siva", Posicao="PLD", Imagem="A_Silva.png",IndiceSelecao=1},
+            new Jogadores {Id=46, Nome="A.Silva", Posicao="PLD", Imagem="A_Silva.png",IndiceSelecao=1},
             new Jogadores {Id=47, Nome="J.Mario", Posicao="ME", Imagem="J_Mario.png",IndiceSelecao=1},
             new Jogadores {Id=48, Nome="Adrien", Posicao="MC", Imagem="Adrien.png",IndiceSelecao=1},
             new Jogadores {Id=49, Nome="Quaresma", Posicao="MD", Imagem="Quaresma.png",IndiceSelecao=1},
@@ -1095,8 +1095,6 @@ namespace FifaWorldCup.Migrations
             };
             equipamentos.ForEach(aa => context.Equipamentos.AddOrUpdate(a => a.Id, aa));
             context.SaveChanges();
-
-
         }
     }
 }

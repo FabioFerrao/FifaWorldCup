@@ -3,11 +3,6 @@
     //funcao chamada no init() para voltar para as categorias
     function retrocederParaGrupos() {
 
-        var divTitulo = document.createElement('div');
-        divTitulo.className = "col-3";
-        var retroceder = document.createElement('h1');
-        retroceder.textContent = "Fifa World Cup";
-        divTitulo.appendChild(retroceder);
         topBar.onclick = function () {
             var selecoesList = document.querySelector('#selecoes');
             selecoesList.style.display = "none";
