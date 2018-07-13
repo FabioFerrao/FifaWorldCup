@@ -126,6 +126,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Imagens\Background.png" />
+    <Content Include="Imagens\fifaLogo.png" />
     <Content Include="Imagens\Jogadores\Adrien.png" />
     <Content Include="Imagens\Jogadores\Ahmadi.png" />
     <Content Include="Imagens\Jogadores\Alderweireld.png" />
@@ -215,6 +216,7 @@
     <Content Include="Imagens\Jogadores\Young.png" />
     <Content Include="Imagens\Jogadores\Ziyach.png" />
     <Content Include="Imagens\Logo.png" />
+    <Content Include="Imagens\Publico.png" />
     <Content Include="Imagens\Selecoes\Belgica.png" />
     <Content Include="Imagens\Selecoes\Equipamentos\BelgicaGR.png" />
     <Content Include="Imagens\Selecoes\Equipamentos\BelgicaPrin.png" />
@@ -250,7 +252,6 @@
     <Content Include="Index.html" />
     <Content Include="JavaScript\grupo.js" />
     <Content Include="JavaScript\init.js" />
-    <Content Include="JavaScript\jogador.js" />
     <Content Include="JavaScript\jogadorDetalhes.js" />
     <Content Include="JavaScript\selecao.js" />
     <Content Include="JavaScript\selecaoDetalhes.js" />

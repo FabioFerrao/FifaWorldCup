@@ -121,6 +121,8 @@
         divJogador.className = "col-md-3 col-sm-3";
         divJogador.setAttribute("id", "divJogador")
         divJogador.setAttribute("data-jogadorid", jogador.Id);
+
+        divJogador.style.cursor = "pointer";
         divJogadores.appendChild(divJogador);
 
         var nomeJogador = document.createElement('h1');

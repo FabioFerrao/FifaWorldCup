@@ -28,6 +28,7 @@
         var divSelecao = document.createElement('div');
         divSelecao.setAttribute("id", "divSelecao")
         divSelecao.className = "col-md-6 col-sm-6 text-center";
+        divSelecao.style.cursor = "pointer";
         divSelecao.setAttribute("data-selecaoid", selecao.Id);
         selecoesList.appendChild(divSelecao);
 
@@ -43,8 +44,6 @@
         divSelecao.appendChild(nome);
         
         var emblema = document.createElement('img');
-        //emblema.style.width = "100%";
-        //emblema.style.height = "100%";
         emblema.style.position = "center";
         emblema.style.marginBottom = "30px";
         emblema.src = "Imagens/Selecoes/" + selecao.Emblema;

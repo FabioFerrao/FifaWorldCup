@@ -19,29 +19,51 @@
     gruposList.innerHTML = "";
     selecoesList.innerHTML = "";
 
+    jogadorDetalhesList.className = "row";
+    jogadorDetalhesList.style.display = "flex";
+
+
     var jogDetalhes = jogador[0];
 
+    var divJogadorImg = document.createElement('div');
+    jogadorDetalhesList.appendChild(divJogadorImg);
+    divJogadorImg.className = "col-md-4 col-sm-4";
 
     var nomeJogador = document.createElement('h1');
     nomeJogador.textContent = jogDetalhes.Nome;
-    jogadorDetalhesList.appendChild(nomeJogador);
+    divJogadorImg.appendChild(nomeJogador);
 
     var imagemJogador = document.createElement('img');
     imagemJogador.src = "Imagens/Jogadores/" + jogDetalhes.Imagem;
-    jogadorDetalhesList.appendChild(imagemJogador);
+    divJogadorImg.appendChild(imagemJogador);
 
+    var divJogadorEstatisticas = document.createElement('div');
+    jogadorDetalhesList.appendChild(divJogadorEstatisticas);
+    divJogadorEstatisticas.className = "col-md-8 col-sm-8";
+
+    var divEstatisticas = document.createElement('div');
+    divEstatisticas.className = "row";
+    divJogadorEstatisticas.appendChild(divEstatisticas);
+
+
+    //Estatistica
 
     for (var i = 0; i < jogDetalhes.listaDeEstatisticaPorJogador.length; i++) {
+
+        var divJogadorEstatistica = document.createElement('div');
+        divJogadorEstatistica.className = "col-md-4 col-sm-4";
+        divJogadorEstatistica.class = "divJogadorEstatistica";
+        divEstatisticas.appendChild(divJogadorEstatistica);
+
         var jogadorEstatistica = jogDetalhes.listaDeEstatisticaPorJogador[i];
-    
 
         var nomeEstatistica = document.createElement('h3');
         nomeEstatistica.textContent = jogadorEstatistica.Nome;
-        jogadorDetalhesList.appendChild(nomeEstatistica);
+        divJogadorEstatistica.appendChild(nomeEstatistica);
 
         var valorEstatistica = document.createElement('p');
         valorEstatistica.textContent = jogadorEstatistica.Valor;
-        jogadorDetalhesList.appendChild(valorEstatistica);
+        divJogadorEstatistica.appendChild(valorEstatistica);
 
     }
 

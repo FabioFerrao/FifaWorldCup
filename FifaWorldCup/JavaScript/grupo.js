@@ -23,7 +23,7 @@
     gruposList.style.display = "flex";
     var divGrupo = document.createElement('div');
     divGrupo.className = "divConteudo row text-center";
-    divGrupo.setAttribute("style", "justify-content:center;background-image:Imagens/Background.png;");
+    divGrupo.setAttribute("style", "justify-content:center;background-image:Imagens/Publico.png;");
 
     gruposList.appendChild(divGrupo);
     for (var i = 0; i < grupos.length; i++) {
@@ -32,7 +32,7 @@
         divPorGrupo.setAttribute("id", "divPorGrupo");
         divPorGrupo.setAttribute("data-grupoid", grupo.Id);
         divPorGrupo.className = "rounded col-md-2";
-
+        divPorGrupo.style.cursor = "pointer";
         divGrupo.appendChild(divPorGrupo);
         
         var nome = document.createElement('h1');

@@ -10,13 +10,13 @@
 <body>
     <!-- Image and text -->
     <nav id="navbarTop" class="navbar navbar-dark bg-dark sticky-top">
-        <a id="topBar" class="navbar-brand">
+        <a id="topBar" class="navbar-brand" style="cursor:pointer">
             <div class="row">
                 <div class="col-md-2">
                     <img src="Imagens/Logo.png" width="60" height="60" class="d-inline-block align-top">
                 </div>
                 <div class="col-md-3" style="margin-left:15px; align-content:center; display:flex; align-items:center;">
-                    <h2 style="color:white">Fifa World Cup</h2>
+                    <h2 style="color:white">Fifa World Cup 2018</h2>
                 </div>
 
             </div>
@@ -25,8 +25,10 @@
 
     <div id="grupos">
     </div>
-    <div class="container">
-        <div id="selecoes">
+    <div class="divSelecoes">
+        <div class="container">
+            <div id="selecoes">
+            </div>
         </div>
     </div>
     <div id="selecaoDetalhes">
@@ -35,14 +37,20 @@
     </div>
     <div id="jogadorDetalhes">
     </div>
-    <div class="divFooter footer position-sticky py-3 fixed-bottom ">
-        <h3>Tecnologias de Internet II </h3>
-        <h5>Aluno:</h5>
-        <p>Fábio André, 19088</p>
 
+    <div class="divFooter footer" style="height:110px; padding-top:0px !important;">
+        <div class="row" style="display:flex; margin-right:0px;">
+            <div class="col-md-4" style="padding-left:20px; padding-top:10px; padding-bottom:10px;" >
+                <img src="/Imagens/fifaLogo.png" style="height:90px;"/>
+
+            </div>
+            <div class="col-md-8" style="padding-right:25px">
+                <h3>Tecnologias de Internet II </h3>
+                <h5>Aluno:</h5>
+                <p style="margin-bottom:0px;">Fábio André, 19088</p>
+            </div>
+        </div>
     </div>
-
-    <script src="JavaScript/jogador.js"></script>
     <script src="JavaScript/jogadorDetalhes.js"></script>
     <script src="JavaScript/selecaoDetalhes.js"></script>
     <script src="JavaScript/selecao.js"></script>
