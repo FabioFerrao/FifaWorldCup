@@ -1,5 +1,5 @@
 ﻿
-/*-------------NAVBAR E FOOTER-----------------*/
+/*-------------NAVBAR-----------------*/
 
 body {
     color: #ffffff;
@@ -10,6 +10,7 @@ body {
     background-color: black !important;
     padding-bottom: 0px !important;
     padding-top: 0px !important;
+    cursor: pointer;
 }
 
     #navbarTop img {
@@ -23,6 +24,8 @@ body {
         display: flex;
         align-items: center;
     }
+
+/*-------------FOOTER-----------------*/
 
 .divFooter {
     background-color: #13396e !important;
@@ -121,8 +124,6 @@ body {
         color: #ffffff;
     }
 
-
-
 /*-----------------SELECOES----------------------*/
 
 #selecoes {
@@ -155,9 +156,8 @@ body .divSelecoes {
         margin-bottom: 30px;
     }
 
-
-
 /*-----------------SELECAO DETALHES----------------------*/
+
 #divDetalhesSelecao {
     padding-top: 2%;
     margin-right: 0px;
