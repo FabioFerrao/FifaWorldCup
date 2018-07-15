@@ -21,20 +21,19 @@
     selecoesList.innerHTML = "";
     gruposList.innerHTML = "";
 
-
-    gruposList.style.display = "flex";
+    //div que contem todos os grupos
     var divConteudoGrupos = document.createElement('div');
     divConteudoGrupos.className = "divConteudoGrupos row text-center";
-    divConteudoGrupos.setAttribute("style", "justify-content:center;");
-
     gruposList.appendChild(divConteudoGrupos);
+
     for (var i = 0; i < grupos.length; i++) {
+
         var grupo = grupos[i];
         var divGrupo = document.createElement('div');
+
         divGrupo.setAttribute("id", "divGrupo");
         divGrupo.setAttribute("data-grupoid", grupo.Id);
         divGrupo.className = "rounded col-md-2, col-sm-2";
-        divGrupo.style.cursor = "pointer";
         divConteudoGrupos.appendChild(divGrupo);
         
         var nome = document.createElement('h1');

@@ -335,8 +335,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\EquipamentosController.cs" />
-    <Compile Include="Controllers\EstatisticaJController.cs" />
     <Compile Include="Controllers\GruposController.cs" />
     <Compile Include="Controllers\JogadoresController.cs" />
     <Compile Include="Controllers\SelecoesController.cs" />

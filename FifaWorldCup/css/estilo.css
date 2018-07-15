@@ -1,5 +1,27 @@
-﻿body .divConteudoGrupos, body .divSelecoes, body #selecaoDetalhes, body #jogadorDetalhes {
+﻿
+/*-------------NAVBAR E FOOTER-----------------*/
+
+body {
+    color:#ffffff;
+    background-color:#13396e;
+}
+#navbarTop {
+    background-color: black !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+}
+
+.divFooter {
     background-color: #13396e !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    color: #ffffff;
+    text-align: right;
+}
+
+/*-----------------GRUPOS----------------------*/
+#grupos {
+    display: flex;
 }
 
 .divConteudoGrupos {
@@ -10,30 +32,7 @@
     height: 455px;
     align-items: center;
     background-size: cover;
-}
-
-body .divSelecoes {
-    background: url("/Imagens/Background.png") 50% 0 no-repeat fixed;
-    background-size: auto;
-}
-
-body #selecaoDetalhes {
-    background: url("/Imagens/Background.png") 50% 0 no-repeat fixed;
-    background-size: auto;
-    color: white;
-}
-
-body #jogadorDetalhes {
-    background: url("/Imagens/Background.png") 50% 0 no-repeat fixed;
-    background-size: auto;
-    margin-right: 0px;
-    margin-left: 0px;
-    color: #ffffff;
-}
-
-#selecaoDetalhes {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
+    justify-content: center;
 }
 
 #divGrupo {
@@ -48,11 +47,11 @@ body #jogadorDetalhes {
     opacity: 0.7;
     text-align: center;
     transition: transform .2s; /* Animacao */
+    cursor: pointer;
 }
 
     #divGrupo:hover {
-        transform: scale(1.06); 
-
+        transform: scale(1.06); /* Animacao */
     }
 
     #divGrupo h1 {
@@ -64,44 +63,165 @@ body #jogadorDetalhes {
         color: #ffffff;
     }
 
-.divFooter {
-    background-color: #13396e !important;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    color: #ffffff;
-    text-align: right;
+
+
+/*-----------------SELECOES----------------------*/
+
+#selecoes {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+body .divSelecoes {
+    background: url("/Imagens/Background.png") 50% 0 no-repeat fixed;
+    background-size: auto;
 }
 
 #divSelecao {
     padding-left: 0px !important;
     padding-right: 0px !important;
     transition: transform .2s; /* Animacao */
+    cursor: pointer;
 }
 
-#divSelecao:hover {
-    transform: scale(1.06); 
+    #divSelecao:hover {
+        transform: scale(1.06); /* Animacao */
+    }
+
+    #divSelecao h1 {
+        color: #ffffff;
+    }
+
+    #divSelecao img {
+        position: center;
+        margin-bottom: 30px;
+    }
+
+
+
+/*-----------------SELECAO DETALHES----------------------*/
+#divDetalhesSelecao {
+    padding-top: 2%;
+    margin-right: 0px;
 }
 
+.divEmblema {
+    text-align: center;
+}
 
-#divSelecao h1 {
+.divEstatisticaEquipamento {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+#divEstatistica {
+    display: flex;
+    border: 2px solid;
+}
+
+.divPorEstatistica p {
+    font-weight: bold;
+}
+
+#divEquipamentos {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top:15px;
+    border: 2px solid;
+}
+
+.divPorEquipamento img {
+    width: 109px;
+    height: 125px;
+}
+
+.divInfoSelecaoDivisao img {
+    width: 100%;
+    height: 720px;
+    border: 1px solid;
+}
+
+body #selecaoDetalhes {
+    background: url("/Imagens/Background.png") 50% 0 no-repeat fixed;
+    background-size: auto;
+    color: white;
+}
+
+#divJogadores {
+    justify-content: center;
+    margin-right: 15px;
+}
+
+#selecaoDetalhes {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.divJogador {
+    transition: transform .2s; /* Animation */
+    text-align: center;
+    cursor: pointer;
+}
+
+    .divJogador:hover {
+        transform: scale(1.06); /* Animacao */
+    }
+
+    .divJogador img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .divJogador p {
+        font-weight: bold;
+    }
+
+
+/*-----------------JOGADOR DETALHES----------------------*/
+
+
+body #jogadorDetalhes {
+    background: url("/Imagens/Background.png") 50% 0 no-repeat fixed;
+    background-size: auto;
+    margin-right: 0px;
+    margin-left: 0px;
     color: #ffffff;
 }
 
-#navbarTop {
-    background-color: black !important;
-    padding-bottom: 0px !important;
-    padding-top: 0px !important;
-}
-
-#divJogador {
-    transition: transform .2s; /* Animation */
-}
-
-#divJogador:hover {
-    transform: scale(1.06);
-}
-
 #jogadorDetalhes {
+    display: flex;
     width: 100%;
     height: 700px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
 }
+
+#divBasicInfo {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    #divBasicInfo img {
+        width: 180px;
+        height: 180px;
+    }
+
+#divEstatisticasJogadores {
+    justify-content: center;
+    text-align: center;
+}
+
+#divImagemPosicao {
+    margin-bottom: 20px;
+}
+
+    #divImagemPosicao img {
+        width:60%;
+        height:520px;
+        border:1px solid;
+    }

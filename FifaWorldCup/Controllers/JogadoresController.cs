@@ -12,22 +12,6 @@ namespace FifaWorldCup.Controllers
     public class JogadoresController : ApiController
     {
         private FifaDB db = new FifaDB();
-        [HttpGet, Route("api/Jogadores")]
-        public IHttpActionResult GetJogadores()
-        {
-            var result = db.Jogadores.Select(jogador => new
-            {  //{ } permite definir um objeto anonimo( sem class) em .net
-                jogador.Id,
-                jogador.Nome,
-                jogador.Imagem,
-                jogador.Posicao,
-                jogador.IndiceSelecao
-            }).ToList(); //guarda o resultado da query numa lista
-
-            //codigo 200 ok com JSON resultante (array dos objetos que representam os grupos)
-            return Ok(result);
-        }
-
 
         [HttpGet, Route("api/Jogador/{id:int}")]
         public IHttpActionResult GetJogador(int id)
@@ -49,21 +33,6 @@ namespace FifaWorldCup.Controllers
                         })
                         .ToList(),
                 }).ToList(); //guarda o resultado da query numa lista
-
-            //codigo 200 ok com JSON resultante (array dos objetos que representam os grupos)
-            return Ok(result);
-        }
-
-        [HttpGet, Route("api/Jogador/{id:int}/Estatistica")]
-        public IHttpActionResult GetEstatisticaJogadores(int id)
-        {
-            var result = db.EstatisticaJ.Where(estatisticaJ => estatisticaJ.IndiceJogador == id).Select(estatisticaJ => new
-            {  //{ } permite definir um objeto anonimo( sem class) em .net          
-                estatisticaJ.Id,
-                estatisticaJ.Nome,
-                estatisticaJ.Valor,
-                estatisticaJ.IndiceJogador
-            }).ToList(); //guarda o resultado da query numa lista
 
             //codigo 200 ok com JSON resultante (array dos objetos que representam os grupos)
             return Ok(result);

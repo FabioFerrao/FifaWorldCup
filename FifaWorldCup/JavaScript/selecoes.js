@@ -1,31 +1,31 @@
 ﻿function mostraSelecoes(selecoes) {
 
+    //associacao dos divs a uma variavel para melhor utilização
     var gruposList = document.querySelector('#grupos');
     var selecoesList = document.querySelector('#selecoes');
     var jogadoresList = document.querySelector('#jogadores');
     var selecaoDetalhesList = document.querySelector('#selecaoDetalhes');
-
-
     var divSelecoes = document.querySelector('.divSelecoes');
-    
-    divSelecoes.style.display = "block";
+    var jogadorDetalhesList = document.querySelector('#jogadorDetalhes');
 
+    //mostrar apenas o div correto
+    divSelecoes.style.display = "block";
+    selecoesList.style.display = "flex";
     gruposList.style.display = "none";
     jogadoresList.style.display = "none";
     selecaoDetalhesList.style.display = "none";
-    selecoesList.style.display = "block";
+    jogadorDetalhesList.style.display = "none";
 
+    //limpar os divs
+    jogadorDetalhesList.innerHTML = "";
     jogadoresList.innerHTML = "";
-    gruposList.innerHTML = "";
     selecaoDetalhesList.innerHTML = "";
-
+    selecoesList.innerHTML = "";
+    gruposList.innerHTML = "";
 
 
     selecoesList.className = "row";
-    selecoesList.style.display = "flex";
 
-    selecoesList.style.marginLeft = "15%";
-    selecoesList.style.marginRight = "15%";
     for (var i = 0; i < selecoes.length; i++) {
 
         var selecao = selecoes[i];
@@ -33,10 +33,8 @@
         var divSelecao = document.createElement('div');
         divSelecao.setAttribute("id", "divSelecao")
         divSelecao.className = "col-md-6 col-sm-6 text-center";
-        divSelecao.style.cursor = "pointer";
         divSelecao.setAttribute("data-selecaoid", selecao.Id);
         selecoesList.appendChild(divSelecao);
-
 
         //funcao para ir buscar os detalhes da selecao selecionada
         divSelecao.onclick = function (e) {
@@ -49,8 +47,6 @@
         divSelecao.appendChild(nome);
         
         var emblema = document.createElement('img');
-        emblema.style.position = "center";
-        emblema.style.marginBottom = "30px";
         emblema.src = "Imagens/Selecoes/" + selecao.Emblema;
         divSelecao.appendChild(emblema);
         
