@@ -2,14 +2,27 @@
 /*-------------NAVBAR E FOOTER-----------------*/
 
 body {
-    color:#ffffff;
-    background-color:#13396e;
+    color: #ffffff;
+    background-color: #13396e;
 }
+
 #navbarTop {
     background-color: black !important;
     padding-bottom: 0px !important;
     padding-top: 0px !important;
 }
+
+    #navbarTop img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #navbarTop .col-md-3 {
+        margin-left: 15px;
+        align-content: center;
+        display: flex;
+        align-items: center;
+    }
 
 .divFooter {
     background-color: #13396e !important;
@@ -17,7 +30,31 @@ body {
     padding-left: 0px !important;
     color: #ffffff;
     text-align: right;
+    height: 110px;
+    padding-top: 0px !important;
 }
+
+    .divFooter img {
+        height: 90px;
+    }
+
+    .divFooter p {
+        margin-bottom: 0px;
+    }
+    .divFooter .row {
+        display: flex;
+        margin-right: 0px;
+    }
+
+        .divFooter .row col-md-4, .divFooter .row col-sm-4 {
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .divFooter .row col-md-8, .divFooter .row col-sm-8 {
+            padding-right: 25px;
+        }
 
 /*-----------------GRUPOS----------------------*/
 #grupos {
@@ -27,8 +64,8 @@ body {
 }
 
 #videoIntroducao {
-    width:720px;
-    height:420px; 
+    width: 720px;
+    height: 420px;
 }
 
 .divTransparente {
@@ -150,7 +187,7 @@ body .divSelecoes {
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    margin-top:15px;
+    margin-top: 15px;
     border: 2px solid;
 }
 
@@ -242,7 +279,7 @@ body #jogadorDetalhes {
 }
 
     #divImagemPosicao img {
-        width:60%;
-        height:520px;
-        border:1px solid;
+        width: 60%;
+        height: 520px;
+        border: 1px solid;
     }
