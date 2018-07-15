@@ -18,6 +18,8 @@ namespace FifaWorldCup.Models
 
         public string Imagem { get; set; }
 
+        public string PosicaoImagem { get; set; }
+
         public ICollection<EstatisticaJ> EstatisticaJ { get; set; }
 
         [ForeignKey("Selecoes")]

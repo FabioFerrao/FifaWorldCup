@@ -21,34 +21,37 @@
 
     jogadorDetalhesList.className = "row";
     jogadorDetalhesList.style.display = "flex";
-
+    jogadorDetalhesList.style.justifyContent = "center";
+    jogadorDetalhesList.style.textAlign = "center";
+    jogadorDetalhesList.style.paddingTop = "2%";
 
     var jogDetalhes = jogador[0];
 
-    var divJogadorBasicInfo = document.createElement('div');
-    jogadorDetalhesList.appendChild(divJogadorBasicInfo);
-    divJogadorBasicInfo.className = "col-md-4 col-sm-4";
 
-    divJogadorBasicInfo.textAlign = "center";
+    var divInfoDetalhesJogador = document.createElement('div');
+    jogadorDetalhesList.appendChild(divInfoDetalhesJogador);
+    divInfoDetalhesJogador.className = "col-md-4 col-sm-4";
+
+    var divBasicInfo = document.createElement('div');
+    divInfoDetalhesJogador.appendChild(divBasicInfo);
+    divBasicInfo.style.justifyContent = "center";
+    divBasicInfo.style.textAlign = "center";
+    divBasicInfo.style.marginBottom = "30px";
 
     var nomeJogador = document.createElement('h1');
     nomeJogador.textContent = jogDetalhes.Nome;
-    divJogadorBasicInfo.appendChild(nomeJogador);
+    divBasicInfo.appendChild(nomeJogador);
 
     var imagemJogador = document.createElement('img');
     imagemJogador.src = "Imagens/Jogadores/" + jogDetalhes.Imagem;
     imagemJogador.setAttribute("style", "width:180px; height:180px;");
-    divJogadorBasicInfo.appendChild(imagemJogador);
-
-    var divJogadorEstatisticas = document.createElement('div');
-    jogadorDetalhesList.appendChild(divJogadorEstatisticas);
-    divJogadorEstatisticas.className = "col-md-8 col-sm-8";
+    divBasicInfo.appendChild(imagemJogador);
 
     var divEstatisticas = document.createElement('div');
     divEstatisticas.className = "row";
     divEstatisticas.style.justifyContent = "center";
     divEstatisticas.style.textAlign = "center";
-    divJogadorEstatisticas.appendChild(divEstatisticas);
+    divInfoDetalhesJogador.appendChild(divEstatisticas);
 
 
     //Estatistica
@@ -71,6 +74,24 @@
         divJogadorEstatistica.appendChild(valorEstatistica);
 
     }
+
+
+    var divImagemPosicao = document.createElement('div');
+    jogadorDetalhesList.appendChild(divImagemPosicao);
+    divImagemPosicao.className = "col-md-8 col-sm-8";
+    divImagemPosicao.style.marginBottom = "20px";
+
+    var imagemPosicao = document.createElement('img');
+    imagemPosicao.src = "Imagens/Jogadores/Posicoes/" + jogDetalhes.PosicaoImagem;
+
+    imagemPosicao.className = "rounded";
+    imagemPosicao.style.width = "60%";
+    imagemPosicao.style.height = "520px";
+    imagemPosicao.style.border = "1px solid";
+
+    divImagemPosicao.appendChild(imagemPosicao);
+
+
 
 
 

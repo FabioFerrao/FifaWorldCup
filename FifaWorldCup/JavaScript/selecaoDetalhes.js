@@ -15,60 +15,77 @@
     selecaoDetalhesList.style.display = "block";
 
     //limpar os restantes divs
-
     jogadorDetalhesList.innerHTML = "";
     jogadoresList.innerHTML = "";
     gruposList.innerHTML = "";
     selecoesList.innerHTML = "";
 
     var selecDetalhes = selecaoDetalhes[0];
+    
 
-    selecaoDetalhesList.className = "row";
-    selecaoDetalhesList.style.display = "flex";
+    var divDetalhesSelecao = document.createElement('div');
+    selecaoDetalhesList.appendChild(divDetalhesSelecao);
 
-    var divSelecaoDados = document.createElement('div');
-    selecaoDetalhesList.appendChild(divSelecaoDados);
-    divSelecaoDados.className = "col-md-4 col-sm-4";
-
-    var divSelecaoBasic = document.createElement('div');
-
-    divSelecaoBasic.style.justifyContent = "center";
-    divSelecaoBasic.style.textAlign = "center";
-    divSelecaoBasic.style.paddingRight = "70px";
-    divSelecaoDados.appendChild(divSelecaoBasic);
+    divDetalhesSelecao.className = "row";
+    divDetalhesSelecao.style.paddingTop = "2%";
+    divDetalhesSelecao.style.marginRight = "0px";
+    
+    //nome e emblema da selecao
+    var divEmblema = document.createElement('div');
+    divDetalhesSelecao.appendChild(divEmblema);
+    divEmblema.className = "col-md-3 col-sm-3";
+    divEmblema.style.textAlign = "center";
 
     var nome = document.createElement('h1');
     nome.textContent = selecDetalhes.Nome;
-    divSelecaoBasic.appendChild(nome);
+    divEmblema.appendChild(nome);
 
     var emblema = document.createElement('img');
     emblema.src = "Imagens/Selecoes/" + selecDetalhes.Emblema;
-    divSelecaoBasic.appendChild(emblema);
+    divEmblema.appendChild(emblema);
+
+
+    //informacao restante da selecao ( Estatistica, equipamentos e posicao dos jogadores )
+    var divInfoSelecao = document.createElement('div');
+    divDetalhesSelecao.appendChild(divInfoSelecao);
+    divInfoSelecao.className = "col-md-9 col-sm-9";
+
+
+    var divInfoSelecaoDivisao = document.createElement('div');
+    divInfoSelecao.appendChild(divInfoSelecaoDivisao);
+    divInfoSelecaoDivisao.className = "row";
+
+
+
+
+
+    var divEstatisticaEquipamento = document.createElement('div');
+    divInfoSelecaoDivisao.appendChild(divEstatisticaEquipamento);
+    divEstatisticaEquipamento.className = "col-md-4 col-sm-4";
+    divEstatisticaEquipamento.marginRight = "100px";
 
     var divEstatisticas = document.createElement('div');
-    divEstatisticas.className = "row";
+    divEstatisticas.className = "row rounded";
     divEstatisticas.id = "divEstatistica";
     divEstatisticas.style.display = "flex";
-
-    divEstatisticas.style.marginLeft = "2%";
-    divEstatisticas.style.marginRight = "15%";
-    divEstatisticas.style.marginTop = "40px";
+    
+    divEstatisticas.style.marginBottom = "20px";
     divEstatisticas.style.justifyContent = "center";
     divEstatisticas.style.textAlign = "center";
+    divEstatisticas.style.border = "2px solid ";
 
-    divSelecaoDados.appendChild(divEstatisticas);
+    divEstatisticaEquipamento.appendChild(divEstatisticas);
 
     //Estatisticas da Selecao
     for (var k = 0; k < selecDetalhes.listaDeEstatisticaPorSelecao.length; k++) {
         var estatisticaSelecao = selecDetalhes.listaDeEstatisticaPorSelecao[k];
-
         var divPorEstatistica = document.createElement('div');
         divPorEstatistica.className = "col-md-6 col-sm-6";
 
         divPorEstatistica.class = "divPorEstatistica";
 
         divEstatisticas.appendChild(divPorEstatistica);
-        
+
         var nomeEstatistica = document.createElement('h3');
         nomeEstatistica.textContent = estatisticaSelecao.Nome;
         divPorEstatistica.appendChild(nomeEstatistica);
@@ -80,47 +97,58 @@
         divPorEstatistica.appendChild(valorEstatistica);
     }
 
+
+
+
     var divEquipamentos = document.createElement('div');
-    divEquipamentos.className = "row";
+    divEquipamentos.className = "row rounded";
     divEquipamentos.id = "divEquipamentos";
     divEquipamentos.style.display = "flex";
     divEquipamentos.style.justifyContent = "center";
-
-    divEquipamentos.style.marginLeft = "2%";
-    divEquipamentos.style.marginRight = "15%";
     
-    divSelecaoDados.appendChild(divEquipamentos);
+    divEquipamentos.style.paddingTop = "20px";
+    divEquipamentos.style.border = "2px solid ";
+    divEstatisticaEquipamento.appendChild(divEquipamentos);
 
     //Equipamentos da Selecao
     for (var k = 0; k < selecDetalhes.listaDeEquipamentosPorSelecao.length; k++) {
         var equipamento = selecDetalhes.listaDeEquipamentosPorSelecao[k];
 
         var divPorEquipamento = document.createElement('div');
-        divPorEquipamento.className = "col-md-5 col-sm-4";
+        divPorEquipamento.className = "col-md-5 col-sm-5";
 
         divPorEquipamento.class = "divPorEquipamento";
 
         divEquipamentos.appendChild(divPorEquipamento);
-        
+
         var imagemEquipamento = document.createElement('img');
         imagemEquipamento.src = "Imagens/Selecoes/Equipamentos/" + equipamento.Imagem;
         divPorEquipamento.appendChild(imagemEquipamento);
         imagemEquipamento.setAttribute("style", "width:109px; height:125px;");
-        
+
         var nomeEquipamento = document.createElement('h3');
         nomeEquipamento.textContent = equipamento.Nome;
         divPorEquipamento.appendChild(nomeEquipamento);
 
     }
+    
+    var divImagemPosicoes = document.createElement('div');
+    divImagemPosicoes.className = "col-md-7 col-sm-7";
+    divInfoSelecaoDivisao.appendChild(divImagemPosicoes);
+    var imagemPosicoes = document.createElement('img');
+    imagemPosicoes.className = "rounded";
+    imagemPosicoes.src = "Imagens/Selecoes/Posicoes/" + selecDetalhes.ImagemPosicoes;
+    imagemPosicoes.style.width = "100%";
+    imagemPosicoes.style.border = "1px solid";
+    imagemPosicoes.style.height = "720px";
+    divImagemPosicoes.appendChild(imagemPosicoes);
 
-    var divSelecaoJogadores = document.createElement('div');
-    divSelecaoJogadores.className = "col-md-8 col-sm-8";
-    selecaoDetalhesList.appendChild(divSelecaoJogadores);
 
     var divJogadores = document.createElement('div');
     divJogadores.className = "row";
+    divJogadores.style.marginRight = "0px";
     divJogadores.style.justifyContent = "center";
-    divSelecaoJogadores.appendChild(divJogadores);
+    selecaoDetalhesList.appendChild(divJogadores);
 
     //Jogadores da Selecao
     for (var j = 0; j < selecDetalhes.listaDeJogadoresPorSelecao.length; j++) {
@@ -155,6 +183,8 @@
             ecraJogadorDetalhes(jogadorID);
         };
     }
+
+
 }
 
 function getSelecaoDetalhes(selecaoDetalhes) {

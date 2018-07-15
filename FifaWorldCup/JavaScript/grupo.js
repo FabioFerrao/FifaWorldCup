@@ -20,6 +20,8 @@
     selecaoDetalhesList.innerHTML = "";
     selecoesList.innerHTML = "";
     gruposList.innerHTML = "";
+
+
     gruposList.style.display = "flex";
     var divConteudoGrupos = document.createElement('div');
     divConteudoGrupos.className = "divConteudoGrupos row text-center";

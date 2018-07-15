@@ -12,6 +12,9 @@ namespace FifaWorldCup.API
         public string Nome { get; set; }
 
         public string Emblema { get; set; }
+
+        public string ImagemPosicoes { get; set; }
+
         public int IndiceGrupo { get; set; }
 
     }

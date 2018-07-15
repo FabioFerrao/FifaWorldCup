@@ -12,6 +12,7 @@ namespace FifaWorldCup.API
         public string Nome { get; set; }
         public string Posicao { get; set; }
         public string Imagem { get; set; }
+        public string PosicaoImagem { get; set; }
 
         public ICollection<EstatisticaDoJogador> listaDeEstatisticaPorJogador { get; set; }
 

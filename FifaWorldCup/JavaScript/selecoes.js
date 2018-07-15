@@ -5,6 +5,11 @@
     var jogadoresList = document.querySelector('#jogadores');
     var selecaoDetalhesList = document.querySelector('#selecaoDetalhes');
 
+
+    var divSelecoes = document.querySelector('.divSelecoes');
+    
+    divSelecoes.style.display = "block";
+
     gruposList.style.display = "none";
     jogadoresList.style.display = "none";
     selecaoDetalhesList.style.display = "none";

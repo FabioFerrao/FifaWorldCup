@@ -13,21 +13,6 @@ namespace FifaWorldCup.Controllers
     {
         private FifaDB db = new FifaDB();
 
-        [HttpGet, Route("api/Selecoes")]
-        public IHttpActionResult GetSelecoes()
-        {
-            var result = db.Selecoes.Select(selecao => new
-            {  //{ } permite definir um objeto anonimo( sem class) em .net
-                selecao.Id,
-                selecao.Nome,
-                selecao.Emblema,
-                selecao.IndiceGrupo
-            }).ToList(); //guarda o resultado da query numa lista
-
-            //codigo 200 ok com JSON resultante (array dos objetos que representam os grupos)
-            return Ok(result);
-        }
-
         [HttpGet, Route("api/Selecao/{id:int}")]
         public IHttpActionResult GetSelecao(int id)
         {
@@ -37,6 +22,7 @@ namespace FifaWorldCup.Controllers
                     Id = selecao.Id,
                     Nome = selecao.Nome,
                     Emblema = selecao.Emblema,
+                    ImagemPosicoes = selecao.ImagemPosicoes,
                     listaDeJogadoresPorSelecao = selecao.Jogadores
                     .Select(j => new GetDetalhesDaSelecao.JogadoresDaSelecao
                     {

@@ -39,6 +39,7 @@ namespace FifaWorldCup.Controllers
                     Nome =  jogador.Nome,
                     Imagem = jogador.Imagem,
                     Posicao = jogador.Posicao,
+                    PosicaoImagem = jogador.PosicaoImagem,
                     listaDeEstatisticaPorJogador = jogador.EstatisticaJ
                        .Select(k => new GetDetalhesDoJogador.EstatisticaDoJogador
                         {

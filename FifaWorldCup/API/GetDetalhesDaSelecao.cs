@@ -10,6 +10,7 @@ namespace FifaWorldCup.API
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Emblema { get; set; }
+        public string ImagemPosicoes { get; set; }
 
         public ICollection<JogadoresDaSelecao> listaDeJogadoresPorSelecao { get; set; }
 

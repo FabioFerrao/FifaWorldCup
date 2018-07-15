@@ -16,6 +16,8 @@ namespace FifaWorldCup.Models
 
         public string Emblema { get; set; }
 
+        public string ImagemPosicoes { get; set; }
+
         public ICollection<Jogadores> Jogadores { get; set; }
 
         public ICollection<Equipamentos> Equipamentos { get; set; }
