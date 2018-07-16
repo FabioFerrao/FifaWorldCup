@@ -44,6 +44,7 @@ body {
     .divFooter p {
         margin-bottom: 0px;
     }
+
     .divFooter .row {
         display: flex;
         margin-right: 0px;
@@ -97,7 +98,6 @@ body {
 
 #divGrupo {
     background-color: #13396e !important;
-    padding-right: 0px !important;
     padding-left: 0px !important;
     border: 1px solid;
     margin-left: 15px;
@@ -106,7 +106,8 @@ body {
     padding-bottom: 100px;
     height: 30%;
     opacity: 0.7;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     transition: transform .2s; /* Animacao */
     cursor: pointer;
 }
@@ -119,7 +120,6 @@ body {
         vertical-align: middle !important;
         position: absolute;
         top: 50%;
-        padding-left: 15%;
         transform: translateY(-50%);
         color: #ffffff;
     }

@@ -126,7 +126,6 @@
     <Content Include="css\estilo.css" />
     <Content Include="Global.asax" />
     <Content Include="Imagens\Background.png" />
-    <Content Include="Imagens\BackgroundWhite.png" />
     <Content Include="Imagens\fifaLogo.png" />
     <Content Include="Imagens\Jogadores\Adrien.png" />
     <Content Include="Imagens\Jogadores\Ahmadi.png" />
