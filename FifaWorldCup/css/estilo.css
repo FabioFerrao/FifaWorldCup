@@ -177,6 +177,8 @@ body .divSelecoes {
 #divEstatistica {
     display: flex;
     border: 2px solid;
+    justify-content: center;
+    text-align: center;
 }
 
 .divPorEstatistica p {
@@ -186,6 +188,7 @@ body .divSelecoes {
 #divEquipamentos {
     display: flex;
     justify-content: center;
+    text-align: center;
     padding-top: 20px;
     margin-top: 15px;
     border: 2px solid;
